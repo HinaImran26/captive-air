@@ -1,0 +1,85 @@
+.navbar{
+  height:100px;
+}
+
+/* Dropdown Button */
+.dropbtn, .nav-link {
+  background-color: transparent;
+  color: black;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px; 
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: var(--blue-color); 
+color:white;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; 
+  /* transition: all 0.2s linear;  */
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn , .nav-link:hover {color: var(--red-color);}
+
+.line {
+ width: 35px;
+ height: 2px;
+ background: var(--blue-color);
+ margin: 0 0 10px 0;
+}
+button.navbar-toggle {
+ outline: none;
+ border: none;
+ padding-top: 10px;
+ display: none;
+}
+
+#myNavbar {
+position: relative;
+z-index: 999;
+background: #fff;
+}
+
+
+
+@media(max-width: 990px) {
+ button.navbar-toggle {
+   display: block;
+   background-color: transparent;
+ }
+.navbar-brand {
+  padding-top: unset !important;
+}
+ .navbar-brand img {
+  width: 200px;
+ }
+}

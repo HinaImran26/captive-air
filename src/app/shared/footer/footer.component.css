@@ -1,0 +1,80 @@
+.container-fluid {
+    height: fit-content;
+    background: linear-gradient(279deg, var(--blue-color), #00000008);
+    color: white;
+    padding: 20px 50px 0;
+    position: relative;
+}
+
+#logo {
+    filter: brightness(0.5);
+    width: 150px;
+}
+
+#contact-us {
+    font-weight: 500;
+}
+
+i {
+    cursor: pointer;
+
+}
+
+/* i:hover{
+    color: var(--red-color);
+} */
+
+.social-icons i {
+    padding: 0 8px;
+}
+
+/* .social-icons i :hover {
+    color: var(--red-color);
+} */
+
+.bi-instagram {
+    border-right: 2px solid var(--red-color);
+    border-left: 2px solid var(--red-color);
+}
+
+.bi-linkedin {
+    border-right: 2px solid var(--red-color);
+}
+
+.rights-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.contact-info:hover {
+    color: var(--red-color);
+    text-decoration: underline;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media(max-width: 900px) {
+    .content-area {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .icons{
+       
+        flex-direction: column;
+        
+    }
+
+    #divider{
+        display: none;
+    }
+}

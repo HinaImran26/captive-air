@@ -1,0 +1,62 @@
+.emp-img{
+    height: 250px;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+p{
+    color: var(--grey-color);
+    line-height: 1.7; 
+}
+
+.title-font{
+    color: var(--blue-color);
+}
+
+.mainimg {
+    height: 300px;
+    position: relative;
+}
+
+
+#banner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+
+.content {
+    position: absolute;
+}
+
+.mainheading {
+color: white;
+    font-weight: 500;
+}
+
+@media(max-width:500px){
+
+    .mainheading{
+     font-size: 30px;
+     width: 80%;
+    }
+ 
+    .content{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+ 
+    #banner{
+     height: 200px;
+    }
+
+.section{
+    flex-direction: column;
+}
+
+
+
+}

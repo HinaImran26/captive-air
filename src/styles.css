@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --blue-color: #006790;
+    --red-color:  #c91c22;
+    --grey-color: #8e8f9a;
+  }
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   overflow-x: hidden;
+}
+
+.dropdown-content{
+  left: 15px;
+      box-shadow: 2px 2px 2px #dbdbdb, 0px -1px 2px #dbdbdb;
+}
+
+.dropdown-content a{
+  padding: 10px 12px !important;
+}

@@ -1,0 +1,147 @@
+.mainimg {
+    height: 300px;
+    position: relative;
+}
+
+
+#banner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+
+.content {
+    position: absolute;
+}
+
+.mainheading {
+    color: white;
+    font-weight: 500;
+}
+
+.heading1,
+.heading2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--blue-color);
+}
+
+.heading2 {
+    font-size: 28px;
+}
+
+p {
+    color: var(--grey-color);
+    line-height: 1.7;
+}
+
+
+.section-img {
+    height: 200px;
+    width: 400px;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+#building-img {
+    width: 40%;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+
+.section-content {
+    font-size: 14px;
+}
+
+ul {
+    /* list-style-type: square; */
+    color: var(--blue-color);
+    font-weight: 600;
+    list-style-image: url(../../../assets/icons/icons8-tick-24.png)
+}
+
+
+hr {
+    width: 35%;
+    border: 1px solid var(--red-color);
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.images-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section,
+.middle-section {
+    padding: 0 45px
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@media(max-width:500px) {
+
+    .mainheading {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    .middle-section {
+        flex-direction: column;
+        text-align: center; padding: 0px;
+    }
+
+    .section {
+        padding: 0px;
+    }
+
+    .images-section {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+
+    .section-img {
+        height: 200px;
+        width: 320px;
+        margin-top: 7px;
+    }
+
+    #building-img {
+        height: 200px;
+        width: 320px;
+    }
+
+
+}
