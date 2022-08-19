@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './views/about/about.component';
+import { ContactUsComponent } from './views/contact-us/contact-us.component';
+import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-air-treatment.component';
 import { HomeComponent } from './views/home/home.component';
 import { HvacProductsComponent } from './views/hvac-products/hvac-products.component';
 import { HvacComponent } from './views/hvac/hvac.component';
@@ -39,6 +41,16 @@ const routes: Routes = [
 {
   path:'hvac-products',
   component: HvacProductsComponent
+}
+,
+{
+  path:'contact-us',
+  component: ContactUsComponent
+}
+,
+{
+  path:'fresh-air-treatment',
+  component: FreshAirTreatmentComponent
 }
 
 

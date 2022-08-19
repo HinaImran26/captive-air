@@ -2,10 +2,11 @@
 
     <div class="row">
 
-        <div class="mainimg col-md-12 px-0 d-flex align-items-center">
+        <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
 
 
-            <video playsinline autoplay muted loop style="height:100%; width:100%;object-fit: cover; filter: brightness(0.5)">
+            <video playsinline autoplay muted loop
+                style="height:100%; width:100%;object-fit: cover; filter: brightness(0.7)">
                 <source src="./../../../assets/videos/WhatsApp Video 2022-08-04 at 3.00.12 PM (2).mp4" type="video/mp4">
             </video>
 
@@ -16,25 +17,25 @@
 
             <div class="content d-flex flex-column align-items-center justify-content-center">
                 <p class="mainheading mb-2">World Class Energy Efficient Solutions</p>
-                <p class="intro ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam provident
+                <!-- <p class="intro ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam provident
                     error quo at consequatur sint qui similique. Facere enim voluptatem minima mollitia dolore
                     asperiores
                     aut ut ex vero alias.</p>
-              <a routerLink="/about"><button class=" learn-more-btn btn-primary py-1">Learn More</button></a>
+              <a routerLink="/about"><button class=" learn-more-btn btn-primary py-1">Learn More</button></a> -->
             </div>
         </div>
 
 
         <div class="col-md-12 text-center py-4">
-            <div class="row my-4 d-flex justify-content-center">
+            <div class="row my-4 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="heading mb-2">Our Business Segment</h1>
+                <hr class="hr-underline m-2">
             </div>
             <div class="row services-cards">
                 <div class="d-flex justify-content-center">
                     <a routerLink="/hvac" style="text-decoration:none; color:black">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="../../../assets/images/hvac.jpeg"
-                                alt="Card image cap">
+                            <img class="card-img-top" src="../../../assets/images/hvac.jpeg" alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Heating Ventilations & Air Conditioning</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
@@ -62,9 +63,7 @@
 
                 <div class="d-flex justify-content-center">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top"
-                            src="../../../assets/images/fire detection.jpeg"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="../../../assets/images/fire detection.jpeg" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title">Fire Suppression & Detection Systems</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -75,8 +74,7 @@
 
                 <div class="d-flex justify-content-center">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top"
-                            src="../../../assets/images/install & services.jpeg"
+                        <img class="card-img-top" src="../../../assets/images/install & services.jpeg"
                             alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title">Installation & Services</h4>
@@ -86,19 +84,31 @@
                     </div>
 
                 </div>
-
-
-                
             </div>
         </div>
 
 
+        <section class="w-100 text-center my-4 p-5 sector-section">
+            <div class="col-md-12">
+                <h1 class="heading">Working Sectors</h1>
+                <hr class="hr-underline">
+                <span class="sector-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aliquid consequatur numquam
+                    mollitia ullam facilis tenetur fuga, similique dolore, consequuntur quibusdam sequi magni maxime! In
+                    dolorum eveniet maiores corporis sit!</span>
+                <div class=" mt-4 sector-mob"> 
+                    <div class="col-md-2 d-flex flex-column align-items-center" *ngFor="let item of sectors">
+                       <div class="icon-boundry"><i class={{item.icon}}></i></div> 
+                        <span class="sector-icons mt-1">{{item.title}}</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
         <section class="sustainable-sols w-100">
-
-
             <div class="col-md-12 mt-4 p-0 d-flex flex-column justify-content-center text-left">
-
-
                 <div class="img-green">
                     <img id="green-img" src="../../../assets/images/leaf - Copy2.jpg" alt="">
                 </div>
@@ -107,26 +117,23 @@
                     <p id="green-para">A country-wide leader engineering specialist Company involved
                         in supply and installation of Heating, Ventilation, Air conditioning, Industrial
                         Dehumidiﬁcation, Fireﬁghting & Plumbing systems</p>
+                        <hr class="hr-clients">
                 </div>
             </div>
         </section>
 
-        <!-- <div class="col-md-12 p-0 mb-4 d-flex justify-content-center align-items-center">
-            <img id="green-img" src="../../../assets/images/SS.jpg" alt="">
-        </div> -->
+
 
         <div class="clients mt-5 mb-5">
             <div class="col-md-6 clients-content">
                 <p class="mb-1">OUR CLIENTS</p>
                 <span class="clients-heading">Our Focus is on the Customer and Improving their Experiences</span>
-                <hr>
+                <hr class="hr-clients">
                 <p>So far the company has completed projects in almost all sectors of life like Hotels, Food &
                     Beverages, Textile, Automobile, Commercial, and Office Buildings, Oil & Gas Sectors, Power Plants,
                     Pharmaceutical, Multinational Food Chains, Hospitals, Shopping Malls, Education Office & Business
                     Buildings.</p>
-
             </div>
-
             <div class="client-carousel col-md-6 p-0 d-flex justify-content-center align-items-center">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
                     <div class="carousel-inner">
@@ -134,31 +141,22 @@
                             [ngClass]="{'active': i == 0 }">
                             <img id="client-logo" class="d-block" [src]='image' alt="logo slides">
                         </div>
-                        <!-- <div class="carousel-item">
-                <img class="d-block" src="../../../assets/images/Bush/bush2.jpg"
-                    alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block"
-                    src="../../../assets/images/Bush/bush3.jpg"
-                    alt="Third slide">
-            </div> -->
+
                     </div>
                 </div>
 
             </div>
             <!-- client section end -->
 
-
-
-
         </div>
         <!-- row-end -->
-    
+
         <div class="col-md-12 text-center my-4">
             <h1 class="heading mb-4">Work to become, Not to Acquire</h1>
+            <hr class="hr-underline">
             <img id="work-img" src="../../../assets/images/CA-Profile.png" alt="">
         </div>
-    
+
+
     </div>
     <!-- container-end -->

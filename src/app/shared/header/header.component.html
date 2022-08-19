@@ -1,24 +1,24 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg d-flex align-items-center">
   <a class="navbar-brand" href="#">
 
-    <img src="../../../assets/images/cropped-web-3.png" alt="">
+    <img id="logo" src="../../../assets/images/cropped-web-3.png" alt="">
   </a>
 
-  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="temp">
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
   </button>
-  <div class="collapse navbar-collapse " id="myNavbar">
+  <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <div class="dropdown">
           <button class="dropbtn">Company</button>
           <div class="dropdown-content">
             <a routerLink="/about">About</a>
-            <a routerLink="/leadership">Leadership</a>
-            <a routerLink="/values">Values</a>
-            <a routerLink="/operational-excellence">Operational Excellence</a>
+            <a routerLink="/leadership"  >Leadership</a>
+            <a routerLink="/values" >Values</a>
+            <a routerLink="/operational-excellence" >Operational Excellence</a>
           </div>
         </div>
       </li>
@@ -28,8 +28,9 @@
           <button class="dropbtn">Products</button>
           <div class="dropdown-content">
             <a routerLink="/hvac">HVAC</a>
-            <a routerLink="/operational-excellence">Link 2</a>
-            <a routerLink="/operational-excellence">Link 3</a>
+            <a routerLink="/fresh-air-treatment">Fresh Air Treatment and Dessicant
+              Dehumidification</a>
+            <a routerLink="/operational-excellence" style="pointer-events:none">Fire Protection and Safety </a>
           </div>
         </div>
       </li>
@@ -39,9 +40,11 @@
         <div class="dropdown">
           <button class="dropbtn">Installations & Services</button>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#" style="pointer-events:none">HVAC Ducting</a>
+            <a href="#" style="pointer-events:none">Plumbing</a>
+            <a href="#" style="pointer-events:none">Fire Fighting</a>
+            <a href="#" style="pointer-events:none">Operation & Maintenance</a>
+            <a href="#" style="pointer-events:none">Exclusive Services</a>
           </div>
         </div>
       </li>
@@ -51,10 +54,12 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" routerLink="/contact-us">Contact</a>
       </li>
 
     </ul>
 
   </div>
 </nav>
+
+

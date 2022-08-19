@@ -1,6 +1,6 @@
 .container-fluid {
     height: fit-content;
-    background: linear-gradient(279deg, var(--blue-color), #00000008);
+    background: var(--blue-color);
     color: white;
     padding: 20px 50px 0;
     position: relative;

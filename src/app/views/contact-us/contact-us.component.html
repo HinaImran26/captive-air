@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
+            <img id="banner" src="../../../assets/images/contact-us-banner.jpg" alt="">
+
+            <div class="content">
+                <h1 class="mainheading ml-3">Contact Us</h1>
+            </div>
+        </div>
+
+        
+
+        <div class="col-md-4 d-flex align-items-center justify-content-center my-5"
+            *ngFor="let item of locations">
+            <div class="card">
+                <div class="temp"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"> </div>
+                <div class="card-body p-4">
+                    <h5 class="card-title pl-4">{{item.location}} Office</h5>
+                    <div class="address d-flex mb-2">
+                        <i class="bi-geo-alt-fill"></i>
+                        <span class="pl-2">{{item.address}}- {{item.location}}</span>
+                    </div>
+                    <div class="email d-flex">
+                        <i class="bi-envelope-fill  d-flex align-items-center"></i>
+                        <span class="pl-2">{{emailAddress}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54422.7525444812!2d74.25068235041971!3d31.512566708730578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903e80f8058b1%3A0x6d6bd55036cb7879!2sCaptive%20Air!5e0!3m2!1sen!2s!4v1660900988463!5m2!1sen!2s' width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="p-5 mb-2"></iframe>
+        
+    </div>
+</div>

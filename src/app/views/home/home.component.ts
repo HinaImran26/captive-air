@@ -26,6 +26,18 @@ export class HomeComponent implements OnInit {
 
   ]
 
+
+  sectors=[
+    {title:'Commercial buildings', icon:'bi-building'},
+    {title:'Oil & Gas', icon:'bi-fuel-pump'},
+    {title:'Power Plants', icon:'bi-lightning'},
+    {title:'Hotels & Resorts', icon:'bi-shop'},
+    {title:'Multinational food chains', icon:'bi-cup-hot'},
+    {title:'Textile & Automobile', icon:'bi-car-front'},
+    {title:'Hospitals & Pharmaceuticals', icon:'bi bi-hospital'},
+    {title:'Education', icon:'bi-mortarboard'},
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

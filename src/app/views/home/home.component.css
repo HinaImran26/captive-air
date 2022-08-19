@@ -1,6 +1,7 @@
 .mainimg {
     height: 500px;
     position: relative;
+    text-align: center;
 }
 
 #banner {
@@ -11,8 +12,9 @@
 
 .mainheading {
     color: rgb(255, 255, 255);
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 65px;
+    font-weight: 360;
+    /* width: 50%; */
     animation: 1s ease-out 0s 1 slideInFromTop;
 
 }
@@ -23,17 +25,17 @@
     flex-direction: row;
 }
 
-.intro{
+/* .intro{
     font-size: 18px;
     color: white;
     width: 50%;
     text-align: center; 
      animation: 1s ease-out 0s 1 slideInFromTop;
     
-}
+} */
 
 
-.learn-more-btn{
+/* .learn-more-btn{
     padding: 0px 10px;
     font-size: 13px;
     background-color: var(--blue-color);
@@ -46,64 +48,67 @@
     background-color: transparent;
     border: 1px solid white;
 }
+ */
 
 
-
-.content{
+.content {
     position: absolute;
-    background-color: #0067904f;
-    height: 100%;
+    /* background-color: #0067904f;
+    height: 100%; */
 }
 
 
 
-.card{
+.card {
     cursor: pointer;
 
 }
 
-.card:hover{
-    transform: scale(1.11,1.11);
-    transition: all 0.2s linear;  
+.card:hover {
+    transform: scale(1.11, 1.11);
+    transition: all 0.2s linear;
+
 }
 
-.card-img-top{
-width: 100%;
-height: 200px;
+.card-img-top {
+    width: 100%;
+    height: 200px;
 }
 
 
-.services-section{
+.services-section {
     background-color: #e5f2e5;
 }
 
-.heading{
+.heading {
     font-size: 30px;
     font-weight: 500;
     color: var(--blue-color);
 }
 
-.card-title{
+.card-title {
     color: var(--blue-color);
     font-size: 20px;
 }
 
-.card-text{
-    font-size:14px;
+.card-text {
+    font-size: 14px;
 }
 
-.card-text, p{
+.card-text,
+p,
+.sector-title {
     color: var(--grey-color);
 }
 
 
 
-.img-green{
+.img-green {
     position: relative;
     width: 100%;
 }
 
-.content-green{
+.content-green {
     position: absolute;
     width: 65%;
     padding-left: 70px;
@@ -111,134 +116,207 @@ height: 200px;
 
 }
 
-#green-img{
+#green-img {
     width: 100%;
     height: 350px;
     object-fit: fill;
 }
 
 
-#green-title{
-    font-size: 40px; color: #34764c;
+#green-title {
+    font-size: 40px;
+    color: #34764c;
 }
 
-#green-para{
+#green-para {
     color: black;
 
 }
 
 
-.client-carousel{
+.client-carousel {
     width: 100%;
-/* height: 100px; */
+    /* height: 100px; */
 }
 
-#client-logo{
+#client-logo {
     height: 200px;
     width: 200px;
 }
 
 
-hr{
+.hr-clients {
     width: 20%;
     border: 1px solid var(--red-color);
+    background-color: var(--red-color);
     margin-left: 0px;
+}
+
+.hr-underline {
+    width: 15%;
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color);
+}
+
+
+.card:hover .card-title {
+    color: var(--red-color);
+    transition: 0.2s all linear;
 }
 
 
 
-.services-cards{
+.services-cards {
     justify-content: space-between;
     gap: 20px;
     padding: 0 50px;
 }
 
-.clients-heading{
-     font-size: 32px;
+.clients-heading {
+    font-size: 32px;
     font-weight: 500;
     color: var(--blue-color);
 }
 
-#work-img{
+#work-img {
     width: 70%;
     height: 70%;
 }
 
-@media(max-width: 1000px) {
-.services-cards{
+
+i {
+    font-size: 2rem;
+    color: var(--blue-color);
+}
+
+.sector-icons {
+    color: var(--blue-color);
+    font-weight: 500;
+}
+
+
+.icon-boundry {
+    border: 2px solid var(--blue-color);
+    padding: 0px -1px;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 40px;
-}
 }
 
-@media(max-width:500px){
+.sector-mob {
 
-.mainheading{
-    text-align: center;
-    font-size: 26px;
-
- 
-}
-
-.intro{
-    width: 90%;
-    font-size: 12px;
-}
-
-.mainimg{
-    height: 255px;
-}
-
-
-.content{
-    padding: 3px;
-}
-
-.learn-more-btn{
-    font-size: 10px;
-}
-
-.heading{
-    font-size: 26px;
-}
-
-#green-title{
-    font-size: 32px;
-}
-
-#green-para{
-    font-size: 12px;
-}
-
-#green-img{
-    height: 250px;
-    
-}
-.content-green{
-padding-left: 28px;
-}
-
-.clients{
-    flex-direction: column;
-    padding: 0 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
 
-.clients-heading{
-    font-size: 26px; line-height: 1.2;
+@media(max-width: 1000px) {
+    .services-cards {
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+@media(max-width:500px) {
+
+    .mainheading {
+        text-align: center;
+        font-size: 26px;
+
+
+    }
+
+    .intro {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .mainimg {
+        height: 255px;
+    }
+
+
+    .content {
+        padding: 3px;
+    }
+
+    .learn-more-btn {
+        font-size: 10px;
+    }
+
+    .heading {
+        font-size: 26px;
+    }
+
+    #green-title {
+        font-size: 32px;
+    }
+
+    #green-para {
+        font-size: 12px;
+    }
+
+    #green-img {
+        height: 250px;
+
+    }
+
+    .content-green {
+        padding-left: 28px;
+    }
+
+    .clients {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+
+
+    .clients-heading {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+
+    #work-img {
+        width: 100%;
+        height: 70%;
+    }
+
+
+
+    .hr-underline,
+    .hr-clients {
+        width: 50%;
+    }
+
+
+    .sector-mob {
+
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .sector-icons {
+        font-size: 15px;
+    }
+
+    .sector-section {
+        padding: 0 !important;
+    }
 }
 
 
-#work-img{
-    width: 100%;
-    height: 70%;
-}
 
 
-
-
-}
 
 
 

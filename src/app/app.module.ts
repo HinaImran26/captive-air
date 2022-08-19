@@ -14,7 +14,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HvacComponent } from './views/hvac/hvac.component';
 import { HvacProductsComponent } from './views/hvac-products/hvac-products.component';
 import { HvacBushProductsComponent } from './views/hvac-bush-products/hvac-bush-products.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common'
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ContactUsComponent } from './views/contact-us/contact-us.component';
+import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-air-treatment.component'
 
 
 
@@ -31,6 +33,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common'
     HvacComponent,
     HvacProductsComponent,
     HvacBushProductsComponent,
+    ContactUsComponent,
+    FreshAirTreatmentComponent,
 
     
     
