@@ -35,16 +35,11 @@ import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-ai
     HvacBushProductsComponent,
     ContactUsComponent,
     FreshAirTreatmentComponent,
-
-    
-    
-   
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-  
    
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],

@@ -7,7 +7,7 @@
 
             <video playsinline autoplay muted loop
                 style="height:100%; width:100%;object-fit: cover; filter: brightness(0.7)">
-                <source src="./../../../assets/videos/WhatsApp Video 2022-08-04 at 3.00.12 PM (2).mp4" type="video/mp4">
+                <source src="./../../../assets/videos/handshakevideo.mp4" type="video/mp4">
             </video>
 
 
@@ -48,6 +48,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
+                    <a routerLink="/fresh-air-treatment" style="text-decoration:none; color:black">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top"
                             src="../../../assets/images/sets-cooling-towers-data-center-building.jpg"
@@ -58,6 +59,7 @@
                                 of the card's content.</p>
                         </div>
                     </div>
+                    </a>
 
                 </div>
 
@@ -88,16 +90,33 @@
         </div>
 
 
+        <section class="w-100 mt-5 d-flex align-items-center section-2">
+            <div class="col-md-12 p-0 d-flex align-items-center" id="section-2">
+                <video id="video-2" playsinline autoplay muted loop
+                    style="object-fit: cover; filter: brightness(0.5);">
+                    <source src="./../../../assets/videos/naturevideoComp.mp4" type="video/mp4">
+                </video>
+                <div class="content px-5" style="z-index: 999;">
+                    <p style="color: white">Innovative<span style="color: var(--red-color);" class="mr-2">.</span></p>
+                    <p style="color: white">Reliable<span style="color: var(--red-color);" class="mr-2">.</span></p>
+                    <p style="color: white">Sustainable Solutions<span style="color: var(--red-color);" class="mr-2">.</span></p>
+                </div>
+            </div>
+        </section>
+
+
+
         <section class="w-100 text-center my-4 p-5 sector-section">
             <div class="col-md-12">
                 <h1 class="heading">Working Sectors</h1>
                 <hr class="hr-underline">
-                <span class="sector-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aliquid consequatur numquam
+                <span class="sector-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aliquid
+                    consequatur numquam
                     mollitia ullam facilis tenetur fuga, similique dolore, consequuntur quibusdam sequi magni maxime! In
                     dolorum eveniet maiores corporis sit!</span>
-                <div class=" mt-4 sector-mob"> 
+                <div class=" mt-4 sector-mob">
                     <div class="col-md-2 d-flex flex-column align-items-center" *ngFor="let item of sectors">
-                       <div class="icon-boundry"><i class={{item.icon}}></i></div> 
+                        <div class="icon-boundry"><i class={{item.icon}}></i></div>
                         <span class="sector-icons mt-1">{{item.title}}</span>
                     </div>
                 </div>
@@ -117,7 +136,7 @@
                     <p id="green-para">A country-wide leader engineering specialist Company involved
                         in supply and installation of Heating, Ventilation, Air conditioning, Industrial
                         Dehumidiﬁcation, Fireﬁghting & Plumbing systems</p>
-                        <hr class="hr-clients">
+                    <hr class="hr-clients">
                 </div>
             </div>
         </section>
