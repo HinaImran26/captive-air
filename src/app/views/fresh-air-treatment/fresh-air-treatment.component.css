@@ -98,6 +98,7 @@ img {
 .carousel-inner {
     width: 100%;
     height: 25rem;
+    
 }
 
 #slider {
@@ -106,6 +107,17 @@ img {
     /* background-color: aqua; */
 }
 
+.carousel-control-prev-icon {
+    background-image: url("../../../assets/icons/left-arrow.png");
+}
+
+.carousel-control-next-icon{
+    background-image: url("../../../assets/icons/right-arrow.png");
+}
+
+#carouselExampleControls, #carouselExampleControls2{
+    width: 100%;
+}
 
 .headings {
     color: var(--blue-color);
@@ -241,5 +253,13 @@ display: block !important;  padding: 0px !important;
     padding: 0px !important; 
 }
 
+#expBanner{
+    height: 10rem;
+margin: 10px 0px !important;
+}
+
+#expBanner h2{
+    font-size: 20px;
+}
 
 }

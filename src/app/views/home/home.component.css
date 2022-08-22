@@ -227,6 +227,26 @@ i {
     height: 350px;
 }
 
+.carousel-control-prev-icon {
+    background-image: url("../../../assets/icons/left-arrow.png");
+}
+
+.carousel-control-next-icon{
+    background-image: url("../../../assets/icons/right-arrow.png");
+}
+
+
+.carousel-inner{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+
+#carouselExampleControls{
+    width: 100%;
+}
+
 @media(max-width: 1000px) {
     .services-cards {
         justify-content: center;
@@ -346,7 +366,19 @@ i {
       
     }
 
+    .client-carousel{
+        margin-top: 15px;
+    }
 
+    .carousel-inner{
+        justify-content: space-around !important;
+    
+    }
+
+    #client-logo{
+        height: 170px;
+    width: 170px;
+}
 
 }
 
