@@ -1,0 +1,103 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
+            <img id="banner" src="../../../assets/fire-protection/fp-banner.jpg" alt="">
+            <div class="content">
+                <h1 class="mainheading text-center">Fire Suppression & Detection Systems</h1>
+            </div>
+        </div>
+        <div class="col-md-12 px-5 text-center my-3 section-0">
+            <span class="headings">
+                Elite Fire & Safety Systems</span>
+            <hr class="hr-underline">
+            <p class="paragraphs">We offer highest quality supply and installation services of ﬁre-ﬁghting systems. Our
+                ability and services are focused on compliance
+                regulations with each individual client's ﬁre and life safety standards, BIS, NBC, NFPA codes,
+                building/ﬁre codes, etc.
+                Our Fire Fighting systems includes a wide range of commercial and industrial systems, including ﬁre and
+                carbon monoxide detection, alarm signaling, incident management, evacuation, monitoring;
+                ﬁre, gas and water mist suppression, ﬁre and gas safety solutions
+                and industrial equipment controls. Our Fire Fighting product range helps save lives and protect
+                property. We with industry- leading brand SRI Malaysia provides a wide range of products and systems,
+                including gas ﬁre suppression system, ﬁre, ﬂame, gas and smoke detectors, portable ﬁre extinguishers,
+                commercial ﬁre suppression systems and intrusion alarms ﬁre, gas and water mist suppression systems, ﬁre
+                and gas safety solutions and industrial equipment controls.
+            </p>
+        </div>
+
+
+        <section class="col-md-12 my-3 d-flex p-4 section-1" style=" height: fit-content;">
+            <div class="col-md-4" *ngFor="let item of array1">
+                <div class="card text-center d-flex align-items-center justify-content-center p-4">
+                    <h4 class="card-title">{{item.title}}</h4>
+                    <h5 class="card-title">{{item.product}}</h5>
+                    <img src={{item.img}} style="width:150px; height:150px;" alt="">
+                    <details>
+                        <summary>Read More</summary>
+                        <p class="paragraphs text-justify">{{item.desc}}</p>
+                        <img src="../../../assets/fire-protection/approved.png" alt="" style="height:70px;
+                            width: 220px;">
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-md-12 my-3 d-flex flex-column align-items-center p-4 section-2"
+            style=" height: fit-content;">
+            <h4 class="card-title">Compact, Automatic & Effective</h4>
+            <div class="w-100 d-flex section-2a">
+                <div class="col-md-4" *ngFor="let item of array2">
+                    <div class="card text-center d-flex align-items-center justify-content-center p-4">
+                        <h5 class="card-title">{{item.product}}</h5>
+                        <img src={{item.img}} style="width:150px; height:150px;" alt="">
+                        <details>
+                            <summary>Read More</summary>
+                            <p class="paragraphs text-justify">{{item.desc}}</p>
+                            <img src="../../../assets/fire-protection/approved.png" alt="" style="height: 70px;
+                            width: 220px;">
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="col-md-12 text-center my-3 section-3">
+            <img src="../../../assets/fire-protection/banner-2.jpg" alt="" style="width:80%; height: 80%;">
+        </section>
+
+
+        <section class="col-md-12 px-5 text-center my-3 section-4">
+            <span class="headings">We represent Standart Pompa Turkey- A global brand </span>
+            <p class="paragraphs">That has been operating since 1957 for the complete range of booster fire-fighting and
+                water process pumps. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolorem quis
+                distinctio tenetur in est consequuntur omnis provident. Doloribus consectetur tempore rerum vel
+                voluptatem tenetur in iste libero vitae numquam!
+            </p>
+            <div class="w-100 col-md-12" id="section-4a">
+                <div class="col-md-4">
+                    <img src="../../../assets/fire-protection/standart-poster.png" alt="" style="width: 100%;
+                    height: 370px;">
+                </div>
+                <div class="col-md-8">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" *ngFor="let image of images let i = index"
+                                [ngClass]="{'active': i == 0 }">
+                                <img class="d-block" [src]='image' alt="First slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
