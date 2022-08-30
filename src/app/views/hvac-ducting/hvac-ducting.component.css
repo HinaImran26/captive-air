@@ -1,0 +1,134 @@
+.mainimg {
+    height: 300px;
+    position: relative;
+}
+
+
+#banner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+
+.content {
+    position: absolute;
+}
+
+.mainheading {
+    color: white;
+    font-weight: 500;
+}
+
+.headings {
+    color: var(--blue-color);
+    font-size: 28px;
+}
+
+.hr-underline {
+    width: 15%;
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color);
+}
+
+.paragraphs {
+    color: var(--grey-color);
+    line-height: 1.7;
+}
+
+
+ul {
+    /* list-style-type: square; */
+    color: var(--grey-color);
+    font-weight: 600;
+    list-style-image: url(../../../assets/icons/icons8-tick-24.png);
+}
+
+summary {
+    color: var(--red-color);
+}
+
+.card p {
+    padding: 0px 20px;
+}
+
+.card-title {
+    color: var(--blue-color);
+}
+
+.card {
+    padding: 0px !important;
+}
+
+.section-2 ul{
+    text-align: left !important;
+}
+
+/* .carousel-control-prev-icon {
+    background-image: url("../../../assets/icons/left-arrow.png");
+}
+
+.carousel-control-next-icon{
+    background-image: url("../../../assets/icons/right-arrow.png");
+}
+
+
+#carouselExampleControls{
+    width: 100%;
+}
+
+#slider-pics{
+    height: 200px;
+    width: 500px;
+}
+
+.carousel-inner{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+@media(max-width:500px) {
+
+    .mainheading {
+        font-size: 30px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .content {
+        /* display: flex;
+     justify-content: center;
+     align-items: center; */
+
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    .section-0, .section-2, .section-3 {
+        padding: 0px 20px !important;
+    }
+
+    .section-0 p, .section-2 p, .section-3 p {
+        text-align: justify;
+    }
+
+    .section-1a, .section-2 {
+        display: block !important;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .img-placement{
+        display: block !important;
+    }
+    .img-placement img{
+        height: 200px !important;
+        width: 100% !important;
+        margin-top: 10px;
+    }
+}

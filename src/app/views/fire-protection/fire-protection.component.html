@@ -30,8 +30,8 @@
             <div class="col-md-4" *ngFor="let item of array1">
                 <div class="card text-center d-flex align-items-center justify-content-center p-4">
                     <h4 class="card-title">{{item.title}}</h4>
-                    <h5 class="card-title">{{item.product}}</h5>
                     <img src={{item.img}} style="width:150px; height:150px;" alt="">
+                    <h5 class="card-title">{{item.product}}</h5>
                     <details>
                         <summary>Read More</summary>
                         <p class="paragraphs text-justify">{{item.desc}}</p>
@@ -44,7 +44,7 @@
 
         <section class="col-md-12 my-3 d-flex flex-column align-items-center p-4 section-2"
             style=" height: fit-content;">
-            <h4 class="card-title">Compact, Automatic & Effective</h4>
+            <h4 class="card-title my-3">Compact, Automatic & Effective</h4>
             <div class="w-100 d-flex section-2a">
                 <div class="col-md-4" *ngFor="let item of array2">
                     <div class="card text-center d-flex align-items-center justify-content-center p-4">

@@ -5,10 +5,12 @@ import { ContactUsComponent } from './views/contact-us/contact-us.component';
 import { FireProtectionComponent } from './views/fire-protection/fire-protection.component';
 import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-air-treatment.component';
 import { HomeComponent } from './views/home/home.component';
+import { HvacDuctingComponent } from './views/hvac-ducting/hvac-ducting.component';
 import { HvacProductsComponent } from './views/hvac-products/hvac-products.component';
 import { HvacComponent } from './views/hvac/hvac.component';
 import { LeadershipComponent } from './views/leadership/leadership.component';
 import { OperationalexcellenceComponent } from './views/operationalexcellence/operationalexcellence.component';
+import { PlumbingComponent } from './views/plumbing/plumbing.component';
 import { ValuesComponent } from './views/values/values.component';
 
 
@@ -57,6 +59,15 @@ const routes: Routes = [
 {
   path:'fire-protection',
   component: FireProtectionComponent
+},
+{
+  path:'plumbing',
+  component: PlumbingComponent
+}
+,
+{
+  path:'hvac-ducting',
+  component: HvacDuctingComponent
 }
 
 

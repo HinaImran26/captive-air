@@ -1,0 +1,99 @@
+.mainimg {
+    height: 300px;
+    position: relative;
+}
+
+
+#banner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+
+.content {
+    position: absolute;
+}
+
+.mainheading {
+color: white;
+    font-weight: 500;
+}
+
+.headings {
+    color: var(--blue-color);
+    font-size: 28px;
+}
+
+.hr-underline {
+    width: 15%;
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color);
+}
+
+.paragraphs {
+    color: var(--grey-color);
+    line-height: 1.7;
+}
+
+
+ul {
+    /* list-style-type: square; */
+    color: var(--grey-color);
+    font-weight: 600;
+    list-style-image: url(../../../assets/icons/icons8-tick-24.png);
+}
+
+.card{
+    height: 15rem;
+}
+
+.card-title{
+    font-size: 20px;
+    color: var(--blue-color);
+    padding: 5px;
+}
+
+
+#cardsArrangment{
+gap: 20px;
+}
+
+@media(max-width:500px){
+
+    .mainheading{
+     font-size: 30px;
+     width: 80%;
+    }
+ 
+    .content{
+     /* display: flex;
+     justify-content: center;
+     align-items: center; */
+     
+    }
+ 
+    #banner{
+     height: 200px;
+    }
+
+    .section-0, .section-1, .section-2, .section-3, .section-4{
+        padding: 0px !important;
+        margin: 20px 10px !important;
+    }
+
+    .section-0 p, .section-1 p , .section-4 p {
+        text-align: justify !important;
+    }
+ 
+.section-1, .section-3{
+    display: block !important;
+}
+
+#listCol{
+    height: 15rem !important;
+    overflow: scroll;
+}
+
+}

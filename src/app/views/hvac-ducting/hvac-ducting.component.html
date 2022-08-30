@@ -1,0 +1,91 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
+            <img id="banner" src="../../../assets/hvac-ducting/ducting-banner.jpg" alt="">
+            <div class="content">
+                <h1 class="mainheading ml-3">HVAC Ducting</h1>
+            </div>
+        </div>
+
+        <div class="col-md-12 px-5 text-center mt-5 section-0">
+            <h2 class="headings">Premium Solutions for Complex Connections</h2>
+            <hr class="hr-underline">
+            <p class="paragraphs">As a professional experts we are by far one of the most reliable, trusted, and leading
+                and most preferred contractors of Pakistan catering to projects of all disciplines HVAC Installations,
+                Ducting, Fire Fighting, Plumbing, Operation and Maintenance.
+                Since inception Captive Aire is focused on delivering highest quality of services being a top
+                contractors over last decade has privileged Captive Aire to work with reputed contractors consultants
+                and clients of large number of prestigious projects of varying value and scales including commercial
+                buildings, hospitals, educational buildings, Pharmaceuticals, Hotels, Residential buildings, Power
+                plants, manufacturing setups. All projects are managed and executed by our in-house team of engineers
+                and technicians.
+            </p>
+        </div>
+
+
+        <section class="col-md-12  d-flex flex-column align-items-center px-5 section-1" style=" height: fit-content;">
+            <h4 class="card-title headings my-3">HVAC Ducts</h4>
+            <div class="w-100 d-flex section-1a">
+                <div class="col-md-4" *ngFor="let item of array2">
+                    <div class="card text-center d-flex align-items-center justify-content-center p-4">
+                        <img src={{item.img}} style="width:100%; height:150px;" alt="">
+                        <h5 class="card-title my-3">{{item.product}}</h5>
+                        <details class="mb-2">
+                            <summary>Read More</summary>
+                            <p class="paragraphs text-justify">{{item.desc}}</p>
+                            <!-- <img src="../../../assets/fire-protection/approved.png" alt="" style="height: 70px;
+                        width: 220px;"> -->
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-md-12 d-flex align-items-center mt-5 px-5 section-2">
+            <div class="col-md-6 text-center">
+                <h4 class="card-title headings my-3 ">Sheet Metal Ducting</h4>
+                <p class="paragraphs">CAPTIVE AIRE has become one of the leading manufacturer of Metal ducts with
+                    production setup at his owned production plant located in Sundar industrial estate Lahore. We made
+                    machines made metal ducting as per highest international standards in different materials GI, mild
+                    steel, stainless steel and aluminum
+                </p>
+                <details class="mb-2">
+                    <summary>Featured Equipment For Metal Ducting</summary>
+                    <ul *ngFor="let item of featuredEquip">
+                        <li>{{item}}</li>
+                    </ul>
+                </details>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="../../../assets/hvac-ducting/metal-ducting.png" alt="" style="width: 100%">
+            </div>
+        </section>
+
+        <section class="col-md-12 text-center mt-5 px-5 d-flex flex-column  justify-content-center section-3 ">
+            <h4 class="card-title headings my-3 ">Metal Ducting Manufacturing & Production Process </h4>
+            <hr class="hr-underline">
+            <p class="paragraphs">Our Project Managers after receiving the tagged drawing, a fabrication schedule is
+                prepared for the ducts to be made after coordinating with the project engineer and consultant. At
+                production plant the fabricator receives the fabrication schedule and dimensions of the duct to be
+                manufactured. CNC Operator inputs the data into the CNC machine such as coil line or Plasma cutter. The
+                square ducts are processed through the CNC operated Coil Line machine to make ducts of (standard
+                length). This duct is then passed through the duct zipper for seam joining and Automatic Precision Cleat
+                bending machine for “C” cleats to form complete duct. At each stage, a factory technician is
+                continuously monitoring the quality.
+                After completion these ducts are sent to quality inspection by Quality Assurance Officer.
+            </p>
+            <div  class=" d-flex align-items-center justify-content-center">
+                <ul class="text-left">
+                    <li>Gate-out from factory for site delivery</li>
+                    <li>Site Installation </li>
+                    <li>Testing and Commissioning</li>
+                </ul>
+            </div>
+                <div class="img-placement d-flex justify-content-center mt-4" style="gap:20px">
+                    <img src="../../../assets/hvac-ducting/m-1.jpg" alt="" style="height: 300px; width:500px">
+                    <img src="../../../assets/hvac-ducting/m-2.jpg" alt="" style="height: 300px; width:500px">
+                </div>
+        </section>
+
+    </div>
+</div>

@@ -40,6 +40,7 @@
 .card{
  width:100%;
  height: fit-content;
+ 
 }
 
 .card-title{
@@ -179,3 +180,20 @@ text-align: justify !important;
     text-align: center !important;
 }
 }
+
+
+/* details
+{
+    transition: height 1s ease;
+    overflow: hidden;
+}
+
+details:not([open])
+{
+    height: 1.25em;
+}
+
+details[open]
+{
+    height: 40rem;
+} */

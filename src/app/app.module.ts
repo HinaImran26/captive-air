@@ -17,7 +17,9 @@ import { HvacBushProductsComponent } from './views/hvac-bush-products/hvac-bush-
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ContactUsComponent } from './views/contact-us/contact-us.component';
 import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-air-treatment.component';
-import { FireProtectionComponent } from './views/fire-protection/fire-protection.component'
+import { FireProtectionComponent } from './views/fire-protection/fire-protection.component';
+import { PlumbingComponent } from './views/plumbing/plumbing.component';
+import { HvacDuctingComponent } from './views/hvac-ducting/hvac-ducting.component'
 
 
 
@@ -37,6 +39,8 @@ import { FireProtectionComponent } from './views/fire-protection/fire-protection
     ContactUsComponent,
     FreshAirTreatmentComponent,
     FireProtectionComponent,
+    PlumbingComponent,
+    HvacDuctingComponent,
   
   ],
   imports: [
