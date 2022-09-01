@@ -1,0 +1,106 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
+            <img id="banner" src="../../../assets/fire-fighting/ff-banner.jpg" alt="">
+            <div class="content">
+                <h1 class="mainheading ml-3">Fire Fighting</h1>
+            </div>
+        </div>
+
+
+        <div class="col-md-12 px-5 text-center mt-5 section-0">
+            <h2 class="headings">Elite Fire & Safety Systems </h2>
+            <hr class="hr-underline">
+            <p class="paragraphs">We offer highest quality supply and installation services of ﬁre-ﬁghting systems. Our
+                ability and services are
+                focused on compliance regulations with each individual client's ﬁre and life safety standards, BIS, NBC,
+                NFPA codes, building/ﬁre codes, etc.
+            </p>
+        </div>
+
+        <section class="col-md-12 section-1 px-5 mt-5 ">
+            <h2 class="headings text-center">Comprehensive Engineering Supply &
+                Installation Services
+            </h2>
+            <hr class="hr-underline">
+            <div class="d-flex section-1a">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <span class="paragraphs mb-3">A wide range of commercial and industrial systems, Including</span>
+                    <ul>
+                        <li *ngFor="let item of array1">{{item}}</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-end section-1b">
+                    <img src="../../../assets/fire-fighting/fire-ex.png" alt="" style="width:70%">
+                </div>
+            </div>
+        </section>
+
+        <section class="col-md-12 px-5 mt-5  text-center  section-2">
+            <h2 class="headings">Installation & Commissioning Installation Services
+            </h2>
+            <hr class="hr-underline">
+            <p class="paragraphs">Thanks to our own installation department we are capable of performing tasks in a
+                comprehensive manner, starting from preparing appropriate documents and design, through delivery of
+                components, and ending with their installation and commissioning.
+                Our customer may, therefore, rely on one partner throughout the whole investment process.
+            </p>
+
+            <div class="img-placement d-flex justify-content-center mt-4" style="gap:20px">
+                <img src="../../../assets/fire-fighting/ff-install1.png" alt="" style="height: 250px; width:450px">
+                <img src="../../../assets/fire-fighting/ff-install2.png" alt="" style="height: 250px; width:450px">
+            </div>
+
+        </section>
+
+
+        <section class="col-md-12 px-5 mt-5  text-center section-3">
+            <h2 class="headings">Quality Systems </h2>
+            <hr class="hr-underline">
+            <p class="paragraphs">Management Review Meetings & Quality Objectives are the main mode of our quality
+                planning. We have identified and defined the activities and resources needed to achieve
+                quality objectives and to meet customer requirements. ALL EQUIPMENT IMPORTED for
+                sale are only those that are manufactured to the highest specifications or equivalent, by
+                ISO or other internationally approved or accredited manufacturers.
+            </p>
+            <div class="d-flex flex-row my-4 section-3a">
+                <div class="col-md-4" *ngFor="let item of array2">
+                    <div class="card d-flex flex-column align-items-center justify-content-center">
+                        <div class="card-body">
+                            <h4 class="card-title">{{item.title}}</h4>
+                            <p class="card-text paragraphs">{{item.desc}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="col-md-12 mt-5 section-4">
+<img src="../../../assets/fire-fighting/ff-banner2.jpg" alt="" style="width: 100%; height: 100%;">
+</section> -->
+
+        <section class="col-md-12 section-4 px-5 my-5 d-flex">
+            <div class="col-md-6">
+                <h2 class="headings">Elite Fire & Safety Systems </h2>
+                <ul>
+                    <li *ngFor="let item of array3">{{item}}</li>
+                </ul>
+                <details>
+                    <summary>Read More</summary>
+                    <span class="paragraphs">Our safety & health objectives are based on the following:</span>
+                    <ul>
+                        <li>Hazard and Risk assessment</li>
+                        <li>Opportunities for continual improvement</li>
+                    </ul>
+                    <span class="paragraphs">The intention is to continually improve occupational health & safety performance through the use
+                        of a documented management system</span>
+                </details>
+            </div>
+            <div class="col-md-6 text-right section-4a">
+                <img src="../../../assets/fire-fighting/ff-safety.jpg" alt="" style="width: 80%">
+            </div>
+        </section>
+
+
+    </div>
+</div>

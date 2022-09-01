@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './views/about/about.component';
 import { ContactUsComponent } from './views/contact-us/contact-us.component';
+import { FireFightingComponent } from './views/fire-fighting/fire-fighting.component';
 import { FireProtectionComponent } from './views/fire-protection/fire-protection.component';
 import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-air-treatment.component';
 import { HomeComponent } from './views/home/home.component';
@@ -69,7 +70,11 @@ const routes: Routes = [
   path:'hvac-ducting',
   component: HvacDuctingComponent
 }
-
+,
+{
+  path:'fire-fighting',
+  component: FireFightingComponent
+}
 
 ];
 

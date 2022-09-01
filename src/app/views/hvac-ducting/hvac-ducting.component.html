@@ -51,8 +51,8 @@
                 </p>
                 <details class="mb-2">
                     <summary>Featured Equipment For Metal Ducting</summary>
-                    <ul *ngFor="let item of featuredEquip">
-                        <li>{{item}}</li>
+                    <ul>
+                        <li  *ngFor="let item of featuredEquip">{{item}}</li>
                     </ul>
                 </details>
             </div>
@@ -74,17 +74,61 @@
                 continuously monitoring the quality.
                 After completion these ducts are sent to quality inspection by Quality Assurance Officer.
             </p>
-            <div  class=" d-flex align-items-center justify-content-center">
+            <div class=" d-flex align-items-center justify-content-center">
                 <ul class="text-left">
                     <li>Gate-out from factory for site delivery</li>
                     <li>Site Installation </li>
                     <li>Testing and Commissioning</li>
                 </ul>
             </div>
-                <div class="img-placement d-flex justify-content-center mt-4" style="gap:20px">
-                    <img src="../../../assets/hvac-ducting/m-1.jpg" alt="" style="height: 300px; width:500px">
-                    <img src="../../../assets/hvac-ducting/m-2.jpg" alt="" style="height: 300px; width:500px">
+            <div class="img-placement d-flex justify-content-center mt-4" style="gap:20px">
+                <img src="../../../assets/hvac-ducting/m-1.jpg" alt="" style="height: 300px; width:500px">
+                <img src="../../../assets/hvac-ducting/m-2.jpg" alt="" style="height: 300px; width:500px">
+            </div>
+        </section>
+
+        <section class="col-md-12 text-center mt-5 px-5 section-4 ">
+            <h4 class="headings">Fabric Ducting</h4>
+            <hr class="hr-underline">
+            <div class="d-flex align-items-center section-4a">
+                <div class="col-md-8 text-left">
+                    <h4 class="card-title headings my-3 ">Comfortable Solutions For The Well-Being Of People</h4>
+                    <p class="paragraphs text-justify">We provide an air dispersion systems through world leading
+                        certiﬁed manufacturer ONEAIR ITALY.
+                        Our solutions are based on technical competence in close cooperation
+                        with our customers to ensure a product that matches your demands at a competitive price
+                    </p>
                 </div>
+                <div class="col-md-4">
+                    <img src="../../../assets/hvac-ducting/oneair-logo.png" alt="" style="    height: 50px;
+                    width: 180px">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="col-md-12 w-100 mt-5 section-5">
+            <img src="../../../assets/hvac-ducting/ducting-banner2.jpg" alt="" style="height: 300px; width:100%">
+        </section>
+
+        <section class="col-md-6 mt-5 px-5 section-6">
+            <h4 class="headings text-center">Solution In Lightness & Practicality</h4>
+            <details class="mb-2" *ngFor="let item of solutionsArray">
+                <summary>{{item.title}}</summary>
+                <span class="paragraphs">{{item.desc}}</span>
+            </details>
+        </section>
+
+        <section class="col-md-6 mt-5 px-5 section-7">
+            <h4 class="headings text-center">Features & Benefits</h4>
+            <details class="mb-2" *ngFor="let item of featuresArray">
+                <summary>{{item.title}}</summary>
+                <span class="paragraphs">{{item.desc}}</span>
+            </details>
+        </section>
+
+        <section class="col-md-12 w-100 my-5 text-center section-8">
+            <img src="../../../assets/hvac-ducting/prog-manag-flowchart.png" alt="" style="height: auto; width: 60%;">
         </section>
 
     </div>
