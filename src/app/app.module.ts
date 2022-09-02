@@ -20,7 +20,9 @@ import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-ai
 import { FireProtectionComponent } from './views/fire-protection/fire-protection.component';
 import { PlumbingComponent } from './views/plumbing/plumbing.component';
 import { HvacDuctingComponent } from './views/hvac-ducting/hvac-ducting.component';
-import { FireFightingComponent } from './views/fire-fighting/fire-fighting.component'
+import { FireFightingComponent } from './views/fire-fighting/fire-fighting.component';
+import { ExclusiveServicesComponent } from './views/exclusive-services/exclusive-services.component';
+import { OperationMaintenaneComponent } from './views/operation-maintenane/operation-maintenane.component'
 
 
 
@@ -43,6 +45,8 @@ import { FireFightingComponent } from './views/fire-fighting/fire-fighting.compo
     PlumbingComponent,
     HvacDuctingComponent,
     FireFightingComponent,
+    ExclusiveServicesComponent,
+    OperationMaintenaneComponent,
   
   ],
   imports: [

@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
+            <img id="banner" src="../../../assets/ex-services/ex-services-banner.jpg" alt="">
+
+            <div class="content">
+                <h1 class="mainheading ml-3">Exclusive Services</h1>
+            </div>
+        </div>
+
+        <section class="col-md-12 mt-5 px-5 section-0">
+            <h2 class="headings  text-center">Most Reliable Indoor Air Quality Specialists</h2>
+            <hr class="hr-underline">
+            <div class="d-flex section-0a">
+                <div class="col-md-6">
+                    <img src="../../../assets/ex-services/indoor-sick-infographic.jpg" alt="" style="width:100%">
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center ">
+                    <p class="paragraphs text-center">We provide you with not only Air Quality testing but also with solutions to
+                        improve your indoor air quality.
+                        Following parameters are tested: </p>
+                    <ul>
+                        <li>Temperature</li>
+                        <li>Humidity</li>
+                        <li>Particulate Matter </li>
+                        <li>Carbon Dioxide (CO2)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-md-12 my-5 px-5 section-1">
+            <h2 class="headings text-center">Performance Testing Of Hvac Systems</h2>
+            <hr class="hr-underline">
+            <p class="paragraphs text-center">It’s important to evaluate and inspect a system regularly to make sure it’s at
+                optimal performance and to check its energy efficiency. Undoubtedly, HVAC systems are no exception to
+                this rule. We provide exclusive services</p>
+
+                <div class="d-flex section-1a">
+                    <div class="col-md-3" *ngFor="let item of array1">
+                        <div class="card text-center" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title headings">{{item.title}}</h4>
+                                <p class="card-text paragraphs">{{item.desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+</div>
