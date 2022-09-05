@@ -34,7 +34,7 @@ p{
 }
 
 .card{
-    width: 23rem;
+    width: 100%;
     /* cursor: pointer; */
 }
 
@@ -43,15 +43,15 @@ p{
     text-align: center; line-height: 1.5;
     height: 65px;
     text-align: justify;
-    overflow-y: hidden;
+    overflow-y: scroll;
     /* overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; */
 }
 
-.card-para:hover{
-    overflow-y: scroll;;
-}
+/* .card-para:hover{
+    overflow-y: scroll;
+} */
 
 .card-title{
     font-size: 20px;
@@ -90,6 +90,27 @@ blockquote {
     color: var(--blue-color);
 }
 
+
+/* css for overflow scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--grey-color); 
+    border-radius: 10px;
+  }
+
+
+
 @media(max-width:500px){
 
    .mainheading{
@@ -127,6 +148,22 @@ blockquote{
     font-size: 12px;
 }
 
+/* css for overflow scroll bar */
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--grey-color); 
+    border-radius: 10px;
+  }
 
 }

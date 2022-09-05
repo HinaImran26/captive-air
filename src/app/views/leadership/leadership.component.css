@@ -17,7 +17,9 @@ p{
     height: 300px;
     position: relative;
 }
-
+.sub-heading {
+    margin: 20px 0;
+}
 
 #banner {
     height: 100%;
@@ -37,7 +39,6 @@ color: white;
 }
 
 @media(max-width:500px){
-
     .mainheading{
      font-size: 30px;
      width: 80%;
@@ -53,10 +54,11 @@ color: white;
      height: 200px;
     }
 
-.section{
-    flex-direction: column;
-}
+    .section{
+        flex-direction: column;
+    }
 
-
-
+    .revert-responsive {
+        flex-direction: column-reverse;
+    }
 }

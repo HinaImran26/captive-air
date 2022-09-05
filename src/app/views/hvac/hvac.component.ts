@@ -6,11 +6,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./hvac.component.css']
 })
 export class HvacComponent implements OnInit, OnDestroy {
-constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-    if(!localStorage.getItem("hasRefreshed"))
-      setTimeout(() =>  {
+    if (!localStorage.getItem("hasRefreshed"))
+      setTimeout(() => {
         window.location.reload();
         localStorage.setItem("hasRefreshed", "true");
       }, 500);
@@ -24,13 +24,10 @@ constructor(private router: Router) {}
     console.log(moretext)
   }
 
-
-navigate(site:any){
-if(site==='rhoss')
-window.open("https://www.rhoss.it/the-group/", "_blank");
-}
-
-
+  navigate(site: any) {
+    if (site === 'rhoss')
+      window.open("https://www.rhoss.it/the-group/", "_blank");
+  }
 
 }
 

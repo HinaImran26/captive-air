@@ -9,12 +9,6 @@
   height: 75px;
 }
 
-/* .navbar:hover  {
-  background-color: white;
-  transition: 0.35s all linear;
-  color: rgb(0, 0, 0);
-} */
-
 /* Dropdown Button */
 .dropbtn,
 .nav-link {
@@ -39,7 +33,7 @@
   background-color: #ffffff;
   min-width: 350px;
   z-index: 1;
-  border-radius: 13px;
+  border-radius: 5px;
   overflow: hidden;
   text-align: left;
 }
@@ -92,14 +86,8 @@ button.navbar-toggle {
 #myNavbar {
   position: relative;
   z-index: 999;
-  background: white;
   text-align: center;
 }
-
-.navbar {
-  column-gap: 400px;
-}
-
 
 @media(max-width: 990px) {
   button.navbar-toggle {

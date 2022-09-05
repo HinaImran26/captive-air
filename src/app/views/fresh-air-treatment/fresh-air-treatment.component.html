@@ -1,15 +1,13 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
-
-
-        <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
+        <div class="mainimg container px-0 d-flex align-items-center justify-content-center">
             <img id="banner" src="../../../assets/images/sets-cooling-towers-data-center-building.jpg" alt="">
             <div class="content">
                 <h1 class="mainheading text-center">Fresh Air Treatment & Dessicant Dehumidification</h1>
             </div>
         </div>
 
-        <div class="col-md-12 px-5 py-3 my-3 text-center">
+        <div class="col-md-12 px-5 py-3 my-5 text-center">
             <h2 class="headings">The forefront of Dehumidification & Industrial Air Treatment Technology</h2>
             <hr class="hr-underline">
             <p class="paragraphs">Over 20 years of experience as a trusted energy recovery and Dehumidification solution
@@ -42,19 +40,24 @@
             <h2 class="headings col-md-12 p-5">OVER 20 YEARS OF EXPERIENCE AS A TRUSTED ENERGY RECOVERY AND
                 DEHUMIDIFICATION SOLUTION PROVIDERS </h2>
         </div>
-        <section class="section-1 w-100  my-3">
+        <section class="section-1 w-100  my-5">
             <div class="col-md-12 h-100 px-5 py-2 d-flex">
-                <div class="col-md-6 py-3" style="background:rgb(255, 255, 255)">
+                <div class="col-md-6 py-3" >
                     <img class="logos" src="../../../assets/fresh air/bry-air-logo.png" alt="">
                     <p class="paragraphs my-2">We represent Bry Air Malaysia founded in 1964 offers wide range of energy
                         efficient solutions
                         catering to all your needs </p>
                     <ul>
-                        <li *ngFor="let item of bryProducts">{{item}}</li>
+                        <li *ngFor="let item of bryProducts">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                            </svg>
+                            <span>{{item}}</span>    
+                        </li>
                     </ul>
                 </div>
 
-                <div class="col-md-6 p-0" style="background:rgb(255, 255, 255)">
+                <div class="col-md-6 p-0" >
                     <img src="../../../assets/fresh air/freshairgirl.jpeg"
                         style="height: 100%;width: 100%; object-fit: fill;" alt="">
                 </div>
@@ -63,75 +66,82 @@
         </section>
 
 
-
-
-        <h2 class="headings col-md-12 text-center  my-3">WIDE-RANGING AREA OF APPLICATION</h2>
+        <h2 class="headings col-md-12 text-center  my-5">WIDE-RANGING AREA OF APPLICATION</h2>
         <p class="paragraphs">Pharmaceuticals . Cold Stores.Data Centers . Plastics Processing & Process Industries .
             Swimming Pools . Farm Houses . Office Buildings </p>
-        <section class="section-2 w-100  my-3">
+        <section class="section-2 w-100  my-5">
             <div class="col-md-12 h-100 px-5 py-2 d-flex">
                 <div class="col-md-6 py-3 d-flex flex-column justify-content-center"
-                    style="background:rgb(255, 255, 255)">
-                    <!-- <img class="logos" src="../../../assets/fresh air/bry-air-logo.png" alt=""> -->
+                    >
                     <h2 class="headings">DEHUMIDIFIERS</h2>
                     <p class="paragraphs my-2">Bry-Air specializes in the manufacturing of desiccant dehumidifiers</p>
                     <ul>
-                        <li *ngFor="let item of FLSeries">{{item}}</li>
+                        <li *ngFor="let item of FLSeries">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                            </svg>
+                        <span>{{item}}</span>    
+                        </li>
                     </ul>
-                    <!-- <img src="../../../assets/fresh air/FLDehumid.jpg" style="height: 100%;width: 80%;" alt=""> -->
                     <details>
                         <summary>Read More</summary>
                         <h2 class="headings">Advantages with EcoDry Inside</h2>
 
                         <ul>
-                            <li *ngFor="let item of FLAdv">{{item}}</li>
+                            <li *ngFor="let item of FLAdv">
+                                <svg class="icon">
+                                    <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                                </svg>
+                            <span>{{item}}</span>    
+                            </li>
                         </ul>
                     </details>
 
                 </div>
 
-                <div class="col-md-6 p-0" style="background:rgb(255, 255, 255)">
-                    <img src="../../../assets/fresh air/FLDehumid.jpg" style="height: 100%;width: 80%;" alt="">
-                    <!-- <details>
-                        <summary>Read More</summary>
-                          <h2 class="headings">Advantages with EcoDry Inside</h2>   
-              
-                <ul>
-                        <li *ngFor="let item of FLAdv">{{item}}</li>
-                    </ul>
-                </details>      -->
+                <div class="col-md-6 p-0" >
+                    <img src="../../../assets/fresh air/FLDehumid.jpg" style="height: 100%;width: 100%;" alt="">
                 </div>
             </div>
         </section>
 
 
-        <h2 class="headings my-3">COMPACT DEHUMIDIFIERS FFB SERIES</h2>
-        <div class="col-md-12 section-3 px-5  my-3 d-flex align-items-center">
-            <div class="col-md-8">
-                <!-- <h2 class="headings">Industrial Applications</h2> -->
+        <h2 class="headings my-5">COMPACT DEHUMIDIFIERS FFB SERIES</h2>
+        <div class="row section-3 px-5 my-5 d-flex align-items-center">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
                 <p class="paragraphs">With varied options to choose from, these dehumidifiers find their abodes with
                     leading
                     manufacturers in industries like: </p>
                 <ul>
-                    <li *ngFor="let item of industrialApps">{{item}}</li>
+                    <li *ngFor="let item of industrialApps">
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                       <span> {{item}}</span>
+                    </li>
                 </ul>
                 <details>
                     <summary>Read More</summary>
                     <h2 class="headings">Advantages</h2>
                     <ul>
-                        <li *ngFor="let item of compactAdv">{{item}}</li>
+                        <li *ngFor="let item of compactAdv">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                            </svg>
+                            <span>{{item}}</span>    
+                        </li>
                     </ul>
                 </details>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
                 <img src="../../../assets/fresh air/compactDehumid.jpg" style="height: 100%;width: 100%;" alt="">
             </div>
         </div>
 
 
-        <h2 class="headings text-center  my-3">FRESH AIR SOLUTIONS</h2>
-        <div class="col-md-12 section-4 px-5   my-3 d-flex align-items-center">
-            <div class="col-md-8">
+        <h2 class="headings text-center  my-5">FRESH AIR SOLUTIONS</h2>
+        <div class="row section-4 px-5   my-5 d-flex align-items-center">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
                 <h2 class="headings">ENERGY RECOVERY WHEELS (HRWS)</h2>
                 <p class="paragraphs">The EcoFresh Energy Recovery Wheel, which recovers total energy
                     (sensible as well as latent).
@@ -142,48 +152,69 @@
                     <summary>Read More</summary>
                     <h2 class="headings">Benefits of EcoFresh Energy Recovery Wheels</h2>
                     <ul>
-                        <li *ngFor="let item of ecoFreshAdv">{{item}}</li>
+                        <li *ngFor="let item of ecoFreshAdv">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                            </svg>
+                        <span>{{item}}</span>    
+                        </li>
                     </ul>
                 </details>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
                 <img src="../../../assets/fresh air/energywheel.jpg" style="height: 100%;width: 100%;" alt="">
             </div>
         </div>
 
-
-
-
-
-        <h2 class="headings text-center  my-3">ENERGY RECOVERY VENTILATORS</h2>
-        <div class="col-md-12 col-sm-12 section-5 px-5  my-3 d-flex align-items-center">
-            <div class="col-md-8">
+        <h2 class="headings text-center  my-5">ENERGY RECOVERY VENTILATORS</h2>
+        <div class="row col-sm-12 section-5 px-5  my-5 d-flex align-items-center">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
                 <!-- <h4 class="headings">ENERGY RECOVERY WHEELS (HRWS)</h4> -->
                 <p class="paragraphs"> ERVs address the basic requirements of a commercial energy recovery ventilator
                     Including High energy transfer efficiency (both sensible and latent).</p>
                 <ul>
-                    <li>Economical first cost</li>
-                    <li>Low operating costs</li>
-                    <li>Low maintenance</li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Economical first cost</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Low operating costs</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Low maintenance</span>    
+                    </li>
                 </ul>
                 <details>
                     <summary>Read More</summary>
                     <h2 class="headings">Applications</h2>
                     <ul>
-                        <li *ngFor="let item of energyVents">{{item}}</li>
+                        <li *ngFor="let item of energyVents">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                            </svg>
+                            <span>{{item}}</span>    
+                        </li>
                     </ul>
                 </details>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
                 <img src="../../../assets/fresh air/energyvents.jpg" style="height: 100%;width: 100%;" alt="">
             </div>
         </div>
 
 
-        <h2 class="headings text-center  my-3">ETHYLENE SCRUBBER – BES SERIES
+        <h2 class="headings text-center  my-5">ETHYLENE SCRUBBER – BES SERIES
             & GAS PHASE FILTRATION SYSTEMS
         </h2>
-        <div class="col-md-12 col-sm-12 section-6 px-5  my-3 d-flex align-items-center">
+        <div class="col-md-12 col-sm-12 section-6 px-5  my-5 d-flex align-items-center">
             <div class="col-md-8">
                 <h2 class="headings">One Stop Shop' Optimum Solution- efficient removal of airborne molecular
                     contaminants
@@ -191,14 +222,29 @@
                 <p class="paragraphs">Captive Aire provides Bry-Air Gas Phase Filtration (GPF) Systems provides solution
                     for removal of air-borne contaminants.</p>
                 <ul>
-                    <li>Data centres, server rooms, research labs. </li>
-                    <li>Diagnostic systems and cold storage.</li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Data centres, server rooms, research labs</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Diagnostic systems and cold storage</span>    
+                    </li>
                 </ul>
                 <details>
                     <summary>Read More</summary>
                     <h2 class="headings">Applications</h2>
                     <ul>
-                        <li *ngFor="let item of ethyAdv">{{item}}</li>
+                        <li *ngFor="let item of ethyAdv">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                            </svg>
+                            <span>{{item}}</span>    
+                        </li>
                     </ul>
                 </details>
             </div>
@@ -210,8 +256,8 @@
 
 
 
-        <h2 class="headings text-center my-3">BRYSORB CHEMICAL MEDIA</h2>
-        <div class="col-md-12 col-sm-12 section-7 px-5  my-3 d-flex align-items-center">
+        <h2 class="headings text-center my-5">BRYSORB CHEMICAL MEDIA</h2>
+        <div class="col-md-12 col-sm-12 section-7 px-5  my-5 d-flex align-items-center">
             <div class="col-md-8">
                 <h2 class="headings">ELIMINATE CORROSIVE, ODOROUS AND TOXIC GASES FROM INDUSTRIAL AND COMMERCIAL
                     ENVIRONMENT
@@ -219,16 +265,37 @@
                 <p class="paragraphs">Neutralizes various gaseous contaminant such as H2S, SO2, Cl2 and NH3, and widely
                     used for gas phase filtration.</p>
                 <ul>
-                    <li>BRYSORB™ 508</li>
-                    <li>BRYSORB™ 508 Blend</li>
-                    <li>BRYSORB™ 515</li>
-                    <li>BRYSORB™ 520</li>
-                    <li>BRYSORB™ 525</li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>BRYSORB™ 508</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>BRYSORB™ 508 Blend</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>BRYSORB™ 515</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>BRYSORB™ 520</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>BRYSORB™ 525</span>    
+                    </li>
                 </ul>
-                <!-- <h4 class="headings">Applications</h4>
-                <ul>
-                    <li *ngFor="let item of ethyAdv">{{item}}</li>
-                </ul> -->
             </div>
             <div class="col-md-4">
                 <img src="../../../assets/fresh air/chemicalmedia.jpg" style="height: 100%;width: 100%;" alt="">
@@ -237,8 +304,8 @@
 
 
 
-        <h2 class="headings text-center  my-3">DATACENTER AIR PURIFIER– DAP SERIES</h2>
-        <div class="col-md-12 col-sm-12 section-8 px-5  my-3 d-flex align-items-center">
+        <h2 class="headings text-center  my-5">DATACENTER AIR PURIFIER– DAP SERIES</h2>
+        <div class="col-md-12 col-sm-12 section-8 px-5  my-5 d-flex align-items-center">
             <div class="col-md-8">
                 <h2 class="headings">NEXT GENERATION
                     NEW CUSTOM DESIGNED
@@ -247,14 +314,25 @@
                 <p class="paragraphs">Bry-Air DAP houses a revolutionary Honeycomb Chemical Filter which is the heart of
                     the system</p>
                 <ul>
-                    <li>Easy to operate</li>
-                    <li>Easy to install</li>
-                    <li>Easy to maintain</li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Easy to operate</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Easy to install</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Easy to maintain</span>    
+                    </li>
                 </ul>
-                <!-- <h4 class="headings">Applications</h4>
-                <ul>
-                    <li *ngFor="let item of ethyAdv">{{item}}</li>
-                </ul> -->
             </div>
             <div class="col-md-4">
                 <img src="../../../assets/fresh air/ethyscrubber.jpg" style="height: 100%;width: 100%;" alt="">
@@ -263,7 +341,7 @@
 
 
 
-        <div class="col-md-6 px-5 py-3  my-3 text-center">
+        <div class="col-md-6 px-5 py-3  my-5 text-center">
             <h2 class="headings">SYSTEMS FOR CRITICAL APPLICATIONS
                 REQUIRING PRECISE ENVIRONMENTAL CONTROL
             </h2>
@@ -298,30 +376,52 @@
             </div>
         </div>
 
-        <h2 class="headings text-center  my-3">SPECIALIST IN THE MANUFACTURING AND COATING OF HVAC COILS</h2>
-        <div class="col-md-12 col-sm-12 section-9 px-5  my-3 d-flex align-items-center">
-            <div class="col-md-8">
-                <img class="logos" src="../../../assets/fresh air/occ-logo.jpg" alt="" style="height: 75px">
-                <h2 class="headings">OASIS COILS & COATINGS (OCC)-
-                    A technology driven company
-                </h2>
+        <h2 class="headings text-center  my-5">SPECIALIST IN THE MANUFACTURING AND COATING OF HVAC COILS</h2>
+        <div class="row col-sm-12 section-9 px-5  my-5 d-flex align-items-center">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
+               <span class="d-inline-flex">
+                <img class="logos" src="../../../assets/fresh air/occ-logo.jpg" alt="">
+                <h2 class="headings">OASIS COILS & COATINGS (OCC)- A technology driven company </h2>
+               </span>
                 <p class="paragraphs">We represent Oasis Coils & Coatings (OCC) is UK based ISO 9001specialist
                     manufacturer, founded in 1979. Offering Heat pipes for dehumidiﬁcation and heat recovery</p>
                 <ul>
-                    <li>Heating /cooling coils</li>
-                    <li>Fan convectors </li>
-                    <li>UV air and coil sterilizers </li>
-                    <li>Trench heaters</li>
-                    <li>Radiant panels</li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Heating /cooling coils</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Fan convectors</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>UV air and coil sterilizers</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Trench heaters</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Radiant panels</span>    
+                    </li>
                 </ul>
             </div>
-            <div class="col-md-4 d-flex flex-column align-items-center" style="gap:5px">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6 d-flex flex-column align-items-center" style="gap:5px">
                 <img src="../../../assets/fresh air/heatpipe1.jpg" style="height: 50%;width: 70%;" alt="">
                 <img src="../../../assets/fresh air/heatpipe2.jpg" style="height: 50%;width: 70%;" alt="">
             </div>
         </div>
-
-
-
     </div>
 </div>

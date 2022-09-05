@@ -11,22 +11,29 @@
     filter: brightness(0.5);
 }
 
+.card-area {
+    margin: 5rem 0 0 0;
+}
 
 .content {
     position: absolute;
 }
 
 .mainheading {
-color: white;
+    color: white;
     font-weight: 500;
 }
 
 .card{
-width: 18rem;
-height: 23rem;
-animation: 1s ease-out 0s 1 slideInFromTop;
-cursor: pointer;
+    width: 18rem;
+    height: 23rem;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
 
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card-img-top{

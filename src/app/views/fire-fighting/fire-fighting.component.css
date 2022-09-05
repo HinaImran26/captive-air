@@ -39,10 +39,23 @@
 
 
 ul {
-    /* list-style-type: square; */
     color: var(--grey-color);
     font-weight: 600;
-    list-style-image: url(../../../assets/icons/icons8-tick-24.png);
+}
+
+li {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background: var(--blue-color);
+    fill: #fff;
+    padding: 0px 6px 3px;
 }
 
 summary {

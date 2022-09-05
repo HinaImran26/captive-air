@@ -17,7 +17,7 @@
 }
 
 .mainheading {
-color: white;
+    color: white;
     font-weight: 500;
 }
 
@@ -35,14 +35,30 @@ p{
 
 ul{
     color: var(--blue-color); font-weight: 600;
-    list-style-image: url(../../../assets/icons/icons8-tick-24.png)
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    margin: 0 0 10px 0;
 }
 
 h2{
     color: var(--red-color);
 }
 
+.excellence {
+    margin: 0 auto;
+}
 
+.icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background: var(--blue-color);
+    fill: #fff;
+    padding: 0px 6px 3px;
+}
 
 @media(max-width:500px){
 

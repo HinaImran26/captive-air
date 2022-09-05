@@ -11,13 +11,19 @@
     filter: brightness(0.5);
 }
 
-
+.performance {
+    margin: 50px auto;
+}
 .content {
     position: absolute;
 }
 
+.services {
+    padding: 0 80px;
+}
+
 .mainheading {
-color: white;
+    color: white;
     font-weight: 500;
 }
 
@@ -25,32 +31,53 @@ p{
     color: var(--grey-color);
     line-height: 1.7; 
 }
+
+.icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background: var(--blue-color);
+    fill: #fff;
+    padding: 0px 6px 3px;
+}
+
 ul{
- 
     color: var(--blue-color); font-weight: 600;
-    list-style-image: url(../../../assets/icons/icons8-tick-24.png)
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+}
+
+.ul-f {
+    margin: 0 25px 0 0;
 }
 
 i{
     font-size: 40px;
-    color: var(--blue-color)
+    color: var(--blue-color);
 }
 
-.card{
+.card {
     text-align: center;
     height: 10rem;
-    border:none;
-    /* width: 18rem; */
+    border: none;
+}
+.card:hover {
+    background-color: var(--blue-color);
+}
+
+.card:hover * {
+    color: #fff;
 }
 
 h3{
     color: var(--blue-color);
 }
 
-
-
 @media(max-width:500px){
-
     .mainheading{
      font-size: 30px;
      width: 80%;

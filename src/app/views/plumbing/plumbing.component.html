@@ -8,7 +8,7 @@
             </div>
         </div>
 
-        <div class="col-md-12 px-5 text-center mt-5 section-0">
+        <div class="container text-center mt-5 section-0">
             <h2 class="headings">Total Commercial Plumbing Solution</h2>
             <hr class="hr-underline">
             <p class="paragraphs">At Captive Aire we provide supply and installation services of plumbing for industrial
@@ -40,8 +40,13 @@
                 <h2 class="headings mb-3">Broad Range Of Building Types</h2>
                 <div id="listCol">
                     <ul>
-                        <li  *ngFor="let item of list1">{{item}}</li>
-                    </ul>
+                    <li *ngFor="let item of list1">
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>{{item}}</span>    
+                    </li>
+                </ul>
                 </div>
             </div>
             <div class="col-md-6">
@@ -49,7 +54,7 @@
             </div>
         </section>
 
-        <section class="col-md-12 text-center my-5 px-5 section-4">
+        <section class="container text-center my-5 section-4">
             <h2 class="headings mb-3">Our Plumbing Services</h2>
             <hr class="hr-underline">
             <p class="paragraphs">Supply and Installation of complete piping and fixtures as per customer and design
@@ -57,7 +62,7 @@
                 eius ab animi nesciunt sunt voluptate incidunt cum. Natus inventore deserunt architecto itaque rem
                 cupiditate. Ipsum unde incidunt illum ab.</p>
             <div class="d-flex justify-content-center flex-wrap mt-4" id="cardsArrangment">
-                <div class="col-md-3" *ngFor="let item of pipesList">
+                <div class="col-md-3 card-item" *ngFor="let item of pipesList">
                     <div class="card">
                         <div style="height: 60%"><img class="card-img-bottom" src={{item.img}} alt="Card image cap"
                                 style="height:100%;"></div>

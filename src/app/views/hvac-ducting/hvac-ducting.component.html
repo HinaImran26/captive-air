@@ -7,7 +7,7 @@
             </div>
         </div>
 
-        <div class="col-md-12 px-5 text-center mt-5 section-0">
+        <div class="container text-center mt-5 section-0">
             <h2 class="headings">Premium Solutions for Complex Connections</h2>
             <hr class="hr-underline">
             <p class="paragraphs">As a professional experts we are by far one of the most reliable, trusted, and leading
@@ -52,7 +52,12 @@
                 <details class="mb-2">
                     <summary>Featured Equipment For Metal Ducting</summary>
                     <ul>
-                        <li  *ngFor="let item of featuredEquip">{{item}}</li>
+                        <li *ngFor="let item of featuredEquip">
+                            <svg class="icon">
+                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                            </svg>
+                            <span>{{item}}</span>    
+                        </li>
                     </ul>
                 </details>
             </div>
@@ -76,9 +81,24 @@
             </p>
             <div class=" d-flex align-items-center justify-content-center">
                 <ul class="text-left">
-                    <li>Gate-out from factory for site delivery</li>
-                    <li>Site Installation </li>
-                    <li>Testing and Commissioning</li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Gate-out from factory for site delivery</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Site Installation</span>    
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>Testing and Commissioning</span>    
+                    </li>
                 </ul>
             </div>
             <div class="img-placement d-flex justify-content-center mt-4" style="gap:20px">
