@@ -8,7 +8,6 @@ import { FireProtectionComponent } from './views/fire-protection/fire-protection
 import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-air-treatment.component';
 import { HomeComponent } from './views/home/home.component';
 import { HvacDuctingComponent } from './views/hvac-ducting/hvac-ducting.component';
-import { HvacProductsComponent } from './views/hvac-products/hvac-products.component';
 import { HvacComponent } from './views/hvac/hvac.component';
 import { LeadershipComponent } from './views/leadership/leadership.component';
 import { OperationMaintenaneComponent } from './views/operation-maintenane/operation-maintenane.component';
@@ -42,11 +41,6 @@ const routes: Routes = [
 {
   path:'hvac',
   component:HvacComponent
-}
-,
-{
-  path:'hvac-products',
-  component: HvacProductsComponent
 }
 ,
 {
