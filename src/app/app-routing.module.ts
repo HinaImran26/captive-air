@@ -9,6 +9,7 @@ import { FreshAirTreatmentComponent } from './views/fresh-air-treatment/fresh-ai
 import { HomeComponent } from './views/home/home.component';
 import { HvacDuctingComponent } from './views/hvac-ducting/hvac-ducting.component';
 import { HvacComponent } from './views/hvac/hvac.component';
+import { InstallationServicesComponent } from './views/installation-services/installation-services.component';
 import { LeadershipComponent } from './views/leadership/leadership.component';
 import { OperationMaintenaneComponent } from './views/operation-maintenane/operation-maintenane.component';
 import { OperationalexcellenceComponent } from './views/operationalexcellence/operationalexcellence.component';
@@ -57,31 +58,28 @@ const routes: Routes = [
   path:'fire-protection',
   component: FireProtectionComponent
 },
-{
-  path:'plumbing',
-  component: PlumbingComponent
-}
-,
-{
-  path:'hvac-ducting',
-  component: HvacDuctingComponent
-}
-,
-{
-  path:'fire-fighting',
-  component: FireFightingComponent
-}
-,
-{
-  path:'exclusive-services',
-  component: ExclusiveServicesComponent
-}
-,
-{
-  path:'operation-maintenance',
-  component: OperationMaintenaneComponent
-}
 
+// {path:'plumbing',component: PlumbingComponent},
+// {
+//   path:'hvac-ducting',
+//   component: HvacDuctingComponent
+// }
+// ,
+// {
+//   path:'fire-fighting',
+//   component: FireFightingComponent
+// }
+// ,
+
+// {path:'exclusive-services',component: ExclusiveServicesComponent},
+
+// {path:'operation-maintenance',
+//   component: OperationMaintenaneComponent},
+
+{
+  path:'installation-services',
+  component: InstallationServicesComponent
+}
 ];
 
 @NgModule({

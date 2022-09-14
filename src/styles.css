@@ -20,6 +20,11 @@ body{
    overflow-x: hidden;
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
+
 .dropdown-content{
   left: 15px;
       box-shadow: 2px 2px 2px #dbdbdb, 0px -1px 2px #dbdbdb;

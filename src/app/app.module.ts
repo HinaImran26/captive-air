@@ -20,7 +20,8 @@ import { PlumbingComponent } from './views/plumbing/plumbing.component';
 import { HvacDuctingComponent } from './views/hvac-ducting/hvac-ducting.component';
 import { FireFightingComponent } from './views/fire-fighting/fire-fighting.component';
 import { ExclusiveServicesComponent } from './views/exclusive-services/exclusive-services.component';
-import { OperationMaintenaneComponent } from './views/operation-maintenane/operation-maintenane.component'
+import { OperationMaintenaneComponent } from './views/operation-maintenane/operation-maintenane.component';
+import { InstallationServicesComponent } from './views/installation-services/installation-services.component'
 
 
 
@@ -43,6 +44,7 @@ import { OperationMaintenaneComponent } from './views/operation-maintenane/opera
     FireFightingComponent,
     ExclusiveServicesComponent,
     OperationMaintenaneComponent,
+    InstallationServicesComponent,
   
   ],
   imports: [
