@@ -49,8 +49,8 @@ li {
 }
 
 .icon {
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
     margin: 0 10px 0 0;
     border-radius: 50%;
     background: var(--blue-color);
@@ -63,9 +63,9 @@ li {
 }
 
 .card-title{
-    font-size: 20px;
+    font-size: 18px;
     color: var(--blue-color);
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 
@@ -75,6 +75,10 @@ li {
 
 .card-item {
     margin: 0 0 20px 0;
+}
+
+.section-1, .section-4{
+    background-color: var(--light-blue-color);
 }
 
 @media(max-width:500px){
@@ -87,6 +91,10 @@ li {
     #banner{
      height: 200px;
     }
+
+.headings{
+    text-align: center !important;
+}
 
     .section-0, .section-1, .section-2, .section-3, .section-4{
         padding: 0px !important;
@@ -105,5 +113,27 @@ li {
     height: 15rem !important;
     overflow: scroll;
 }
+
+.section-1 img{
+    width: 100% !important;
+}
+
+/* css for overflow scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--grey-color); 
+    border-radius: 10px;
+  }
 
 }

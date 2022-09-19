@@ -10,7 +10,7 @@ export class InstallationServicesComponent implements OnInit {
   array1=[{title:'HVAC Ducting', link:'#ducting'},
   {title:'Plumbing', link:'#plumbing'},
   {title:'Fire Fighting', link:'#fire-fight'},
-  {title:'Operation Maintenance', link:'#op-main'},
+  {title:'Operational Maintenance', link:'#op-main'},
   {title:'Exclusive Services', link:'#ex-services'},]
 
   constructor() { }

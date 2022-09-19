@@ -10,7 +10,7 @@
         <div class="container text-center mt-5 section-0">
             <h2 class="headings">Premium Solutions for Complex Connections</h2>
             <hr class="hr-underline">
-            <p class="paragraphs">As a professional experts we are by far one of the most reliable, trusted, and leading
+            <p class="paragraphs text-justify">As a professional experts we are by far one of the most reliable, trusted, and leading
                 and most preferred contractors of Pakistan catering to projects of all disciplines HVAC Installations,
                 Ducting, Fire Fighting, Plumbing, Operation and Maintenance.
                 Since inception Captive Aire is focused on delivering highest quality of services being a top
@@ -23,9 +23,9 @@
         </div>
 
 
-        <section class="col-md-12  d-flex flex-column align-items-center px-5 section-1" style=" height: fit-content;">
+        <section class="col-md-12  d-flex flex-column align-items-center px-5 section-1 my-4" style=" height: fit-content;">
             <h4 class="card-title headings my-3">HVAC Ducts</h4>
-            <div class="w-100 d-flex section-1a">
+            <div class="w-100 d-flex justify-content-center mt-3 section-1a">
                 <div class="col-md-4" *ngFor="let item of array2">
                     <div class="card text-center d-flex align-items-center justify-content-center p-4">
                         <img src={{item.img}} style="width:100%; height:150px;" alt="">
@@ -42,15 +42,15 @@
         </section>
 
         <section class="col-md-12 d-flex align-items-center mt-5 px-5 section-2">
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-justify d-flex flex-column">
                 <h4 class="card-title headings my-3 ">Sheet Metal Ducting</h4>
                 <p class="paragraphs">CAPTIVE AIRE has become one of the leading manufacturer of Metal ducts with
                     production setup at his owned production plant located in Sundar industrial estate Lahore. We made
                     machines made metal ducting as per highest international standards in different materials GI, mild
                     steel, stainless steel and aluminum
                 </p>
-                <details class="mb-2">
-                    <summary>Featured Equipment For Metal Ducting</summary>
+                <!-- <details class="mb-2">
+                    <summary>Featured Equipment For Metal Ducting</summary> -->
                     <ul>
                         <li *ngFor="let item of featuredEquip">
                             <svg class="icon">
@@ -59,17 +59,17 @@
                             <span>{{item}}</span>    
                         </li>
                     </ul>
-                </details>
+                <!-- </details> -->
             </div>
             <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <img src="../../../assets/hvac-ducting/metal-ducting.png" alt="" style="width: 100%">
+                <img src="../../../assets/hvac-ducting/metal-ducting.png" alt="" style="width: 90%; padding: 10px;">
             </div>
         </section>
 
-        <section class="col-md-12 text-center mt-5 px-5 d-flex flex-column  justify-content-center section-3 ">
+        <section class="col-md-12 text-center my-5 px-5 d-flex flex-column  justify-content-center section-3 ">
             <h4 class="card-title headings my-3 ">Metal Ducting Manufacturing & Production Process </h4>
-            <hr class="hr-underline">
-            <p class="paragraphs">Our Project Managers after receiving the tagged drawing, a fabrication schedule is
+            <!-- <hr class="hr-underline"> -->
+            <p class="paragraphs text-justify">Our Project Managers after receiving the tagged drawing, a fabrication schedule is
                 prepared for the ducts to be made after coordinating with the project engineer and consultant. At
                 production plant the fabricator receives the fabrication schedule and dimensions of the duct to be
                 manufactured. CNC Operator inputs the data into the CNC machine such as coil line or Plasma cutter. The
@@ -80,7 +80,7 @@
                 After completion these ducts are sent to quality inspection by Quality Assurance Officer.
             </p>
             <div class=" d-flex align-items-center justify-content-center">
-                <ul class="text-left">
+                <ul class="text-left mt-3">
                     <li>
                         <svg class="icon">
                             <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
@@ -108,11 +108,11 @@
         </section>
 
         <section class="col-md-12 text-center mt-5 px-5 section-4 ">
-            <h4 class="headings">Fabric Ducting</h4>
-            <hr class="hr-underline">
+            <h4 class="headings my-3">Fabric Ducting</h4>
+            <!-- <hr class="hr-underline"> -->
             <div class="d-flex align-items-center section-4a">
                 <div class="col-md-8 text-left">
-                    <h4 class="card-title headings my-3 ">Comfortable Solutions For The Well-Being Of People</h4>
+                    <h4 class="card-title subheadings my-3 ">Comfortable Solutions For The Well-Being Of People</h4>
                     <p class="paragraphs text-justify">We provide an air dispersion systems through world leading
                         certiﬁed manufacturer ONEAIR ITALY.
                         Our solutions are based on technical competence in close cooperation
@@ -127,12 +127,13 @@
             </div>
         </section>
 
-        <section class="col-md-12 w-100 mt-5 section-5">
-            <img src="../../../assets/hvac-ducting/ducting-banner2.jpg" alt="" style="height: 300px; width:100%">
+        <section class="col-md-12 w-100 section-5">
+            <img src="../../../assets/hvac-ducting/ducting-banner2.jpg" alt="" style="height: 300px; width:50%; padding: 10px;">
+            <img src="../../../assets/hvac-ducting/ducting-banner3.jpg" alt="" style="height: 300px; width:50%; padding: 10px">
         </section>
 
         <section class="col-md-6 mt-5 px-5 section-6">
-            <h4 class="headings text-center">Solution In Lightness & Practicality</h4>
+            <h4 class="subheadings text-center">Solution In Lightness & Practicality</h4>
             <details class="mb-2" *ngFor="let item of solutionsArray">
                 <summary>{{item.title}}</summary>
                 <span class="paragraphs">{{item.desc}}</span>
@@ -140,7 +141,7 @@
         </section>
 
         <section class="col-md-6 my-5 px-5 section-7">
-            <h4 class="headings text-center">Features & Benefits</h4>
+            <h4 class="subheadings text-center">Features & Benefits</h4>
             <details class="mb-2" *ngFor="let item of featuresArray">
                 <summary>{{item.title}}</summary>
                 <span class="paragraphs">{{item.desc}}</span>

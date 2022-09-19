@@ -50,8 +50,8 @@ li {
 }
 
 .icon {
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
     margin: 0 10px 0 0;
     border-radius: 50%;
     background: var(--blue-color);
@@ -66,7 +66,7 @@ i{
 
 .card:hover {
     background: var(--blue-color);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .card:hover * {
@@ -86,6 +86,9 @@ i{
     flex-wrap: wrap;
 }
 
+.section-3, .section-6{
+    background-color: var(--light-blue-color);
+}
 
 .section-4 img{
     width: 100%;
@@ -108,7 +111,7 @@ i{
 
     .mainheading {
         font-size: 30px;
-        width: 100%;
+        
     }
 
     .content {

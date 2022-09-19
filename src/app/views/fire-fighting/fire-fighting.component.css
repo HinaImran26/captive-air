@@ -49,8 +49,8 @@ li {
 }
 
 .icon {
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
     margin: 0 10px 0 0;
     border-radius: 50%;
     background: var(--blue-color);
@@ -64,7 +64,7 @@ summary {
 
 .card-title {
     color: var(--red-color);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .card{
@@ -72,6 +72,9 @@ summary {
     height: 14rem;
 }
 
+.section-1, .section-3{
+    background-color: var(--light-blue-color);
+}
 
 @media(max-width:500px) {
 
@@ -141,7 +144,7 @@ text-align:center;
     margin-top: 20px;
 }
 
-.section-4a img{
+.section-4a img, .section-1b img{
 width: 100% !important;
 }
 
