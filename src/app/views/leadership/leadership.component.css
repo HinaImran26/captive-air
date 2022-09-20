@@ -38,6 +38,11 @@ color: white;
     font-weight: 500;
 }
 
+.headings {
+    color: var(--blue-color);
+    font-size: 28px;
+}
+
 @media(max-width:500px){
     .mainheading{
      font-size: 30px;

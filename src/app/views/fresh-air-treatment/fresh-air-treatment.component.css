@@ -197,6 +197,10 @@ summary{
     color: var(--red-color);
 }
 
+.subheadings {
+    color: var(--blue-color);
+    font-size: 22px;
+}
 
 @media (max-width:500px){
     .mainheading{
