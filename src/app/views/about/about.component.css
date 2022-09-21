@@ -23,14 +23,11 @@
 
 .heading1,
 .heading2 {
-    font-size: 32px;
-    font-weight: 500;
     color: var(--blue-color);
+    font-size: 28px;
+
 }
 
-.heading2 {
-    font-size: 28px;
-}
 
 p {
     color: var(--grey-color);
@@ -96,6 +93,17 @@ hr {
 .middle-section {
     padding: 0 45px
 }
+
+.subheadings {
+    color: var(--blue-color);
+    font-size: 22px;
+}
+
+.headings {
+    color: var(--blue-color);
+    font-size: 28px;
+}
+
 
 @keyframes slideInFromTop {
     0% {

@@ -77,4 +77,8 @@ i {
     #divider{
         display: none;
     }
+
+    *{
+        font-size: 14px;
+    }
 }

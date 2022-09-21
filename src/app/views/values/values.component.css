@@ -11,9 +11,9 @@
     filter: brightness(0.5);
 }
 
-.performance {
+/* .performance {
     margin: 50px auto;
-}
+} */
 .content {
     position: absolute;
 }
@@ -80,7 +80,7 @@ h3{
 @media(max-width:500px){
     .mainheading{
      font-size: 30px;
-     width: 80%;
+     width: 100%;
     }
  
     .content{
@@ -92,4 +92,44 @@ h3{
     #banner{
      height: 200px;
     }
- }
+ 
+.section-2 p{
+    text-align: justify !important;
+}
+
+.section-2{
+    padding: 0px 15px;
+}
+
+.services{
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 0px;
+
+}
+
+.card-title{
+    font-size: 14px;
+}
+
+.card{
+    width: 10rem !important;
+}
+/* css for overflow scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--grey-color); 
+    border-radius: 10px;
+  }
+}
