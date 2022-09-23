@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-installation-services',
@@ -13,9 +14,33 @@ export class InstallationServicesComponent implements OnInit {
   {title:'Operational Maintenance', link:'#op-main'},
   {title:'Exclusive Services', link:'#ex-services'},]
 
-  constructor() { }
+
+
+
+  constructor() {}
+
+scrollbtn:any;
+
 
   ngOnInit(): void {
-  }
+
+this.scrollbtn=document.getElementById('btn-back-to-top');
+console.log(this.scrollbtn);
+
+window.addEventListener('scroll', (e)=> {
+if(window.scrollY > 500){
+  // console.log("in if condition")
+  this.scrollbtn.style.display="block";
+}
+else{
+  this.scrollbtn.style.display="none";
+}
+
+})
+}
+
+scrollToTop(){
+  window.scrollTo(0,0);
+}
 
 }
