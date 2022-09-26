@@ -44,16 +44,21 @@ color: white;
 }
 
 @media(max-width:500px){
+    .mainimg{
+        height: 202px;
+    }
+    
+    
     .mainheading{
      font-size: 30px;
      width: 80%;
     }
- 
+/*  
     .content{
      display: flex;
      justify-content: center;
      align-items: center;
-    }
+    } */
  
     #banner{
      height: 200px;

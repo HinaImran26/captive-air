@@ -14,6 +14,7 @@ import { LeadershipComponent } from './views/leadership/leadership.component';
 import { OperationMaintenaneComponent } from './views/operation-maintenane/operation-maintenane.component';
 import { OperationalexcellenceComponent } from './views/operationalexcellence/operationalexcellence.component';
 import { PlumbingComponent } from './views/plumbing/plumbing.component';
+import { ProjectsComponent } from './views/projects/projects.component';
 import { ValuesComponent } from './views/values/values.component';
 
 
@@ -79,6 +80,11 @@ const routes: Routes = [
 {
   path:'installation-services',
   component: InstallationServicesComponent
+},
+
+{
+  path:'projects',
+  component: ProjectsComponent
 }
 ];
 

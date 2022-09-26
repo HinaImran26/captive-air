@@ -118,6 +118,11 @@ font-size: 16px;
 
 @media(max-width:500px){
 
+    .mainimg{
+        height: 202px;
+    }
+    
+
     .mainheading{
      font-size: 30px;
      width: 100%;

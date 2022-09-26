@@ -107,7 +107,10 @@ i{
 }
 
 @media(max-width:500px) {
-
+    .mainimg{
+        height: 202px;
+    }
+    
 
     .mainheading {
         font-size: 30px;
@@ -118,6 +121,7 @@ i{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 7px;
     }
 
     #banner {

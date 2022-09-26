@@ -1,0 +1,23 @@
+
+
+p{
+    padding: 5px;
+    font-size: 14px;
+    animation: color-change 1s infinite;
+    animation-direction: normal;
+    background-color: var( --light-grey-color);
+  
+}
+
+@keyframes color-change {
+    0% { color: var(--red-color); }
+    50% { color: var(--blue-color); }
+    100% { color: var(--red-color); }
+  }
+
+
+  @media(max-width:500px){
+    p{
+        font-size: 12px;
+    }
+  }

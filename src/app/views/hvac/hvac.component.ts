@@ -58,19 +58,14 @@ export class HvacComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
-    if (!localStorage.getItem("hasRefreshed"))
-      setTimeout(() => {
-        window.location.reload();
-        localStorage.setItem("hasRefreshed", "true");
-      }, 500);
+    // if (!localStorage.getItem("hasRefreshed"))
+    //   setTimeout(() => {
+    //     window.location.reload();
+    //     localStorage.setItem("hasRefreshed", "true");
+    //   }, 500);
   }
   ngOnDestroy(): void {
-    localStorage.removeItem("hasRefreshed")
-  }
-
-  readmore() {
-    var moretext = document.getElementById("more")
-    console.log(moretext)
+    // localStorage.removeItem("hasRefreshed")
   }
 
   navigate(site: any) {

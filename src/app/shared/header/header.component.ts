@@ -9,7 +9,18 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+ let navbar=document.getElementById('myNavbar');
+// console.log(navbar)
+
+// navbar?.addEventListener("click", function(){
+  
+// })
+ 
+
+
+  }
 }
 
 

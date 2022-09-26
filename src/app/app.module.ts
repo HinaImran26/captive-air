@@ -21,7 +21,9 @@ import { HvacDuctingComponent } from './views/hvac-ducting/hvac-ducting.componen
 import { FireFightingComponent } from './views/fire-fighting/fire-fighting.component';
 import { ExclusiveServicesComponent } from './views/exclusive-services/exclusive-services.component';
 import { OperationMaintenaneComponent } from './views/operation-maintenane/operation-maintenane.component';
-import { InstallationServicesComponent } from './views/installation-services/installation-services.component'
+import { InstallationServicesComponent } from './views/installation-services/installation-services.component';
+import { ProjectsComponent } from './views/projects/projects.component';
+import { NewsHeaderComponent } from './shared/news-header/news-header.component'
 
 
 
@@ -45,6 +47,8 @@ import { InstallationServicesComponent } from './views/installation-services/ins
     ExclusiveServicesComponent,
     OperationMaintenaneComponent,
     InstallationServicesComponent,
+    ProjectsComponent,
+    NewsHeaderComponent,
   
   ],
   imports: [

@@ -152,12 +152,18 @@ background: var(--blue-color);
 
 @media(max-width:500px) {
 
+    .mainimg{
+        height: 202px;
+    }
+    
+
     .mainheading {
         font-size: 30px;
         width: 100%;
     }
 
     .content {
+        padding: 4px;
         display: flex;
         justify-content: center;
         align-items: center;

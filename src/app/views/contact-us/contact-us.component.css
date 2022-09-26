@@ -81,6 +81,10 @@ iframe{
     height: 200px !important;
 }
 
+.mainimg{
+    height: 202px;
+}
+
 .mainheading{
     font-size: 30px;
     width: 100%;
