@@ -5,8 +5,8 @@
         <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
 
 
-            <video playsinline autoplay muted loop disablePictureInPicture controlsList="nodownload"
-                style="height:100%; width:100%;object-fit: cover; filter: brightness(0.7)">
+            <video playsinline [muted]="true" [autoplay]="true" [loop]="true" disablePictureInPicture controlsList="nodownload"
+                style="height:100%; width:100%;object-fit: cover; filter: brightness(0.7)" id="vid1">
                 <source src="./../../../assets/videos/handshakevideo.mp4" type="video/mp4">
             </video>
 
@@ -35,7 +35,7 @@
                 <div class="d-flex justify-content-center">
                     <a routerLink="/hvac" style="text-decoration:none; color:black">
                         <div class="card" style="width: 18rem;height: 23rem;">
-                            <img class="card-img-top" src="../../../assets/images/hvac.jpeg" alt="Card image cap">
+                            <img class="card-img-top" src="../../../assets/images/hvac.webp" alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Heating Ventilations & Air Conditioning</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
@@ -51,7 +51,7 @@
                     <a routerLink="/fresh-air-treatment" style="text-decoration:none; color:black">
                         <div class="card" style="width: 18rem; height: 23rem;">
                             <img class="card-img-top"
-                                src="../../../assets/images/sets-cooling-towers-data-center-building.jpg"
+                                src="../../../assets/images/sets-cooling-towers-data-center-building.webp"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Fresh Air Treatment & Desiccant Dehumdification</h4>
@@ -67,7 +67,7 @@
                 <div class="d-flex justify-content-center">
                     <a routerLink="/fire-protection" style="text-decoration:none; color:black">
                         <div class="card" style="width: 18rem; height: 23rem;">
-                            <img class="card-img-top" src="../../../assets/images/fire detection.jpeg"
+                            <img class="card-img-top" src="../../../assets/images/fire-detection.webp"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Fire Suppression & Detection Systems</h4>
@@ -82,7 +82,7 @@
                 <div class="d-flex justify-content-center">
                     <a routerLink="/installation-services" style="text-decoration:none; color:black">
                         <div class="card" style="width: 18rem; height: 23rem;">
-                            <img class="card-img-top" src="../../../assets/images/install & services.jpeg"
+                            <img class="card-img-top" src="../../../assets/images/install-services.webp"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Installation & Services</h4>
@@ -99,7 +99,7 @@
 
         <section class="w-100 mt-5 d-flex align-items-center section-2">
             <div class="col-md-12 p-0 d-flex align-items-center" id="section-2">
-                <video id="video-2" playsinline autoplay muted loop disablePictureInPicture controlsList="nodownload" style="object-fit: cover;">
+                <video id="video-2" playsinline [muted]="true" [autoplay]="true" [loop]="true" disablePictureInPicture controlsList="nodownload" style="object-fit: cover;">
                     <source src="./../../../assets/videos/naturevideoComp.mp4" type="video/mp4">
                 </video>
                 <div class="content px-5" style="z-index: 999;">
@@ -190,7 +190,7 @@
         <div class="col-md-12 text-center my-4">
             <h1 class="heading mb-4">Work to become, Not to Acquire</h1>
             <hr class="hr-underline">
-            <img id="work-img" src="../../../assets/images/CA-Profile.png" alt="">
+            <img id="work-img" src="../../../assets/images/CA-Profile.webp" alt="">
         </div>
 
 

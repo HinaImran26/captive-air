@@ -41,7 +41,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+  //  let vid= document.getElementById('vid1');
+
+   
   }
 
 }
