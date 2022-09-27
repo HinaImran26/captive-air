@@ -15,10 +15,23 @@
         <div class="dropdown">
           <button class="dropbtn">Company</button>
           <div class="dropdown-content">
-            <a routerLink="/about">About</a>
-            <a routerLink="/leadership">Leadership</a>
-            <a routerLink="/values">Values</a>
-            <a routerLink="/operational-excellence">Operational Excellence</a>
+            <a class="d-lg-none d-sm-block d-xs-block" routerLink="/about" data-toggle="collapse"
+              data-target=".navbar-collapse">About</a>
+            <a class="d-none d-lg-block d-xl-block" data-toggle="collapse" data-target=".navbar-collapse"
+              routerLink="/about">About</a>
+            <!--  -->
+            <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+              routerLink="/leadership">Leadership</a>
+            <a class="d-none d-lg-block d-xl-block" routerLink="/leadership">Leadership</a>
+            <!--  -->
+            <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+              routerLink="/values">Values</a>
+            <a class="d-none d-lg-block d-xl-block" routerLink="/values">Values</a>
+            <!--  -->
+            <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+              routerLink="/operational-excellence">Operational Excellence</a>
+            <a class="d-none d-lg-block d-xl-block" routerLink="/operational-excellence">Operational Excellence</a>
+            <!--  -->
           </div>
         </div>
       </li>
@@ -27,10 +40,20 @@
         <div class="dropdown">
           <button class="dropbtn">Our Sectors</button>
           <div class="dropdown-content">
-            <a routerLink="/hvac">HVAC</a>
-            <a routerLink="/fresh-air-treatment">Fresh Air Treatment and Dessicant
+            <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+              routerLink="/hvac">HVAC</a>
+            <a class="d-none d-lg-block d-xl-block" routerLink="/hvac">HVAC</a>
+            <!--  -->
+            <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+              routerLink="/fresh-air-treatment">Fresh Air Treatment and Dessicant
               Dehumidification</a>
-            <a routerLink="/fire-protection">Fire Protection and Safety </a>
+            <a class="d-none d-lg-block d-xl-block" routerLink="/fresh-air-treatment">Fresh Air Treatment and Dessicant
+              Dehumidification</a>
+            <!--  -->
+            <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+              routerLink="/fire-protection">Fire Protection and Safety </a>
+            <a class="d-none d-lg-block d-xl-block" routerLink="/fire-protection">Fire Protection and Safety </a>
+            <!--  -->
           </div>
         </div>
       </li>
@@ -38,7 +61,11 @@
 
       <li class="nav-item">
         <div class="dropdown">
-          <a routerLink="/installation-services"><button class="dropbtn">Installations & Services</button> </a>
+          <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+            routerLink="/installation-services"><button class="dropbtn">Installations & Services</button> </a>
+          <a class="d-none d-lg-block d-xl-block" routerLink="/installation-services"><button
+              class="dropbtn">Installations & Services</button> </a>
+          <!--  -->
           <!-- <div class="dropdown-content"> 
             <a routerLink="/hvac-ducting">HVAC Ducting</a>
             <a routerLink="/plumbing">Plumbing</a>
@@ -50,11 +77,17 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link"  routerLink="/projects">Projects</a>
+        <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+            routerLink="/projects"><button class="dropbtn">Projects</button> </a>
+          <a class="d-none d-lg-block d-xl-block" routerLink="/projects"><button
+              class="dropbtn">Projects</button> </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contact-us">Contact</a>
+        <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+            routerLink="/contact-us"><button class="dropbtn">Contact</button> </a>
+          <a class="d-none d-lg-block d-xl-block" routerLink="/contact-us"><button
+              class="dropbtn">Contact</button> </a>
       </li>
 
     </ul>

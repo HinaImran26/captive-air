@@ -8,19 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
+  navbar=document.getElementById('myNavbar');
 
   ngOnInit() {
+   
 
- let navbar=document.getElementById('myNavbar');
-// console.log(navbar)
-
-// navbar?.addEventListener("click", function(){
-  
-// })
- 
+}
 
 
-  }
 }
 
 
