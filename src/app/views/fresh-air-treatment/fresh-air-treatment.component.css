@@ -87,8 +87,8 @@ img {
 
 .carousel-inner {
     width: 100%;
-    height: 25rem;
-    
+    height: fit-content;
+
 }
 
 #slider {
@@ -110,11 +110,12 @@ img {
     background-image: url("../../../assets/icons/left-arrow.png");
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     background-image: url("../../../assets/icons/right-arrow.png");
 }
 
-#carouselExampleControls, #carouselExampleControls2{
+#carouselExampleControls,
+#carouselExampleControls2 {
     width: 100%;
 }
 
@@ -140,11 +141,17 @@ img {
     margin: 20px 0;
 } */
 
-.section-1, .section-2 {
+
+.section-1,
+.section-2 {
     height: 350px;
 }
 
-.section-2, .section-3, .section-4, .section-5, .section-6{
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6 {
     height: fit-content;
 }
 
@@ -169,20 +176,20 @@ li {
 }
 
 
-#slider2-imgs{
+#slider2-imgs {
     height: 150px;
     width: 100%;
     object-fit: scale-down;
 }
 
-#expBanner{
+#expBanner {
     height: 25rem;
     background-image: url(https://www.metcoengineering.com/wp-content/uploads/2019/05/industrial-banner.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#expBanner h2{
+#expBanner h2 {
     color: #ffffff;
     font-size: 36px;
     background: #1c3150b3;
@@ -193,7 +200,7 @@ li {
     margin: 0px;
 }
 
-summary{
+summary {
     color: var(--red-color);
 }
 
@@ -202,74 +209,135 @@ summary{
     font-size: 22px;
 }
 
-@media (max-width:500px){
-    
-    .mainimg{
+.section-1-2 {
+    /* padding: 10px; */
+    background: var(--light-blue-color);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:500px) {
+    .container-fluid * {
+        overflow-x: hidden;
+    }
+
+    .mainimg {
         height: 202px;
     }
-    
-    .mainheading{
+
+    .mainheading {
         font-size: 30px;
         width: 100%;
-       }
-    
-       .content{
+    }
+
+    .content {
         display: flex;
         justify-content: center;
         align-items: center;
-       }
-    
-       #banner{
+    }
+
+    #banner {
         height: 200px;
-       }
-    
-  .headings{
-    width: 100%;
-  }    
-       
-.section-1 .col-md-12{
-    flex-direction: column;     padding: 0px !important;
-    margin: 0px !important;
-}
+    }
 
-.section-1a, .section-2a, .section-3a, .section-4a, .section-5a, .section-6a{
-justify-content: center !important;
-}
+    .hr-underline {
+        width: 50%;
+    }
 
-.section-1 .col-md-6 img{
-    height: 50% !important; width: 50% !important;
-}
+    .headings {
+        width: 100%;
+    }
+
+   
+    .section-1 .col-md-12 {
+        flex-direction: column;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .section-1-2 {
+        padding: 10px;
+        height: fit-content;
+    }
+
+    /* .section-1-2 h2{
+    font-size: 20px;
+    } */
+
+    .section-1a,
+    .section-2a,
+    .section-3a,
+    .section-4a,
+    .section-5a,
+    .section-6a {
+        justify-content: center !important;
+    }
+
+    .section-1 .col-md-6 img {
+        height: 50% !important;
+        width: 50% !important;
+    }
 
 
-.section-2 .col-md-12{
-display: block !important;  padding: 0px !important; 
-} 
+    .section-2 .col-md-12 {
+        display: block !important;
+        padding: 0px !important;
+    }
 
-.section-3, .section-1{
-    display: block !important;
-}
+    .section-3,
+    .section-1 {
+        display: block !important;
+    }
 
-.section-2, .section-1{
-    height:fit-content;
-    padding: 0px !important;
-}
+    .section-2,
+    .section-1 {
+        height: fit-content;
+        padding: 0px !important;
+    }
 
-.section-5, .section-4, .section-6, .section-7, .section-8, .section-9{
-    display: block !important;
-    padding: 0px !important;
-}
+    .section-5,
+    .section-4,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        display: block !important;
+        padding: 0px !important;
+    }
 
-.section-3{
-    padding: 0px !important; 
-}
+    .section-8-5 {
+        text-align: center;
+        padding: 10px !important;
+    }
 
-#expBanner{
-    height: 10rem; 
-/* margin: 10px 0px !important; */
-}
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-9,
+    .section-0 {
+        padding: 10px !important;
+    }
 
-#expBanner h2{
-    font-size: 18px;
+    #expBanner {
+        height: fit-content;
+        /* margin: 10px 0px !important; */
+    }
+
+    #expBanner h2 {
+        font-size: 18px;
+    }
+
+
+    .carousel-inner {
+        height: fit-content !important;
+    }
+
+.section-9 img{
+    width: 70% !important;
 }
 
 }
