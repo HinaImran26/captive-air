@@ -38,11 +38,16 @@ export class HomeComponent implements OnInit {
     {title:'Education', icon:'bi-mortarboard'},
   ]
 
+
+  array1=[{title:'Enhancing customer experience', desc:'Listening our customers is a top priority'},
+  {title:'Driving values to customer', desc:'Technological features, brand awareness, and customer satisfaction'},
+  {title:'Delivering best in class performance', desc:'Offering superior product of higher quality'},
+  {title:'Innovating sustainable solutions', desc:'Offering economically sound and environmentally healthy solutions that preserve the long term well-being of customers and the environment'},
+]
+
   constructor() { }
 
   ngOnInit(): void {
-  //  let vid= document.getElementById('vid1');
-
    
   }
 

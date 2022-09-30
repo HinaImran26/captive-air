@@ -18,6 +18,24 @@
 
 }
 
+.intro{
+    color: #fff;
+    text-transform:lowercase;
+    font-size: 20px;
+    font-weight: 360;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.learn-more-btn{
+    background: var(--blue-color);
+    border: 1px solid #fff; 
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.learn-more-btn:hover{
+    background-color:transparent;
+}
+
 .clients {
     padding: 0 50px;
     display: flex;
@@ -28,8 +46,33 @@
     position: absolute;
 }
 
+.section-0{
+    position: relative;
+    text-align: center;
+    height: 400px;
+}
+
 .card {
     cursor: pointer;
+}
+
+.card2{
+    background-color: transparent;
+    border: 1px solid white;
+    height: 11rem;
+    pointer-events: none;
+}
+
+.card2 .card-body{
+    flex-direction: column;
+}
+
+.card2 *{
+    color: #fff;
+}
+
+.card2 .card-title{
+    height: unset;
 }
 
 .card-body{
@@ -42,6 +85,8 @@
     transform: scale(1.11, 1.11);
     transition: all 0.2s linear;
 }
+
+
 
 .card-img-top {
     width: 100%;
@@ -244,20 +289,35 @@ i {
 
     .intro {
         width: 90%;
-        font-size: 12px;
+        font-size: 14px;
     }
 
-    .mainimg {
+    .mainimg{
         height: 255px;
     }
 
+    .section-0{
+        height: 200px;
+    }
 
+.section-0 .content{
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+    gap: 190px;
+    justify-content: flex-start !important;
+    padding: 15px !important;
+}
+
+/* .card-2{
+    height: fit-content;
+} */
     .content {
         padding: 3px;
     }
 
     .learn-more-btn {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .heading {
