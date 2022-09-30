@@ -8,10 +8,10 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
 })
 export class InstallationServicesComponent implements OnInit {
 
-  array1=[{title:'HVAC Ducting', link:'#ducting'},
+  array1=[{title:'Ducting & Piping', link:'#ducting'},
   {title:'Plumbing', link:'#plumbing'},
   {title:'Fire Fighting', link:'#fire-fight'},
-  {title:'Operational Maintenance', link:'#op-main'},
+  {title:'Operation & Maintenance', link:'#op-main'},
   {title:'Exclusive Services', link:'#ex-services'},]
 
 

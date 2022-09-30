@@ -62,20 +62,35 @@ i{
 
 .card {
     text-align: center;
-    height: 10rem;
-    border: none;
+    height: 8rem;
+    border: 1px solid var(--light-grey-color);
 }
-.card:hover {
+
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .card:hover {
     background-color: var(--blue-color);
 }
 
 .card:hover * {
     color: #fff;
-}
+} */
 
 h3{
     color: var(--blue-color);
 }
+
+
+.hr-underline {
+    width: 10%;
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color);
+}
+
 
 @media(max-width:500px){
   
@@ -98,6 +113,10 @@ h3{
      height: 200px;
     }
  
+    .hr-underline{
+        width: 50%;
+    }
+    
 .section-2 p{
     text-align: justify !important;
 }

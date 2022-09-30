@@ -32,6 +32,12 @@
     cursor: pointer;
 }
 
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card:hover {
     transform: scale(1.11, 1.11);
     transition: all 0.2s linear;
@@ -213,6 +219,12 @@ i {
 #carouselExampleControls{
     width: 100%;
 }
+
+.paragraphs {
+    color: var(--grey-color);
+    line-height: 1.7;
+}
+
 
 @media(max-width: 1000px) {
     .services-cards {

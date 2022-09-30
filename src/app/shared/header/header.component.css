@@ -1,12 +1,12 @@
 #logo {
-  height: 65px;
+  height: 95px;
   padding: 1px;
   filter: contrast(0.9); 
   filter: drop-shadow(1px 0px 0px black);
 }
 
 .navbar {
-  height: 75px;
+  height: 100px;
 }
 
 

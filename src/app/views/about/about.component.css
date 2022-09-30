@@ -78,7 +78,7 @@ li {
 
 
 hr {
-    width: 35%;
+    width: 20%;
     border: 1px solid var(--red-color);
     margin: 0px;
     margin-bottom: 8px;
@@ -173,5 +173,8 @@ hr {
         width: 320px;
     }
 
-
+    .hr-underline{
+        width: 50%;
+    }
+    
 }

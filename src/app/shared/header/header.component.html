@@ -17,7 +17,7 @@
           <div class="dropdown-content">
             <a class="d-lg-none d-sm-block d-xs-block" routerLink="/about" data-toggle="collapse"
               data-target=".navbar-collapse">About</a>
-            <a class="d-none d-lg-block d-xl-block" data-toggle="collapse" data-target=".navbar-collapse"
+            <a class="d-none d-lg-block d-xl-block" 
               routerLink="/about">About</a>
             <!--  -->
             <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
@@ -38,7 +38,7 @@
 
       <li class="nav-item">
         <div class="dropdown">
-          <button class="dropbtn">Our Sectors</button>
+          <button class="dropbtn">Business Segments</button>
           <div class="dropdown-content">
             <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
               routerLink="/hvac">HVAC</a>
@@ -77,17 +77,19 @@
       </li>
 
       <li class="nav-item">
-        <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+        <div class="dropdown">
+          <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
             routerLink="/projects"><button class="dropbtn">Projects</button> </a>
-          <a class="d-none d-lg-block d-xl-block" routerLink="/projects"><button
-              class="dropbtn">Projects</button> </a>
+          <a class="d-none d-lg-block d-xl-block" routerLink="/projects"><button class="dropbtn">Projects</button> </a>
+        </div>
       </li>
 
       <li class="nav-item">
-        <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
+        <div class="dropdown">
+          <a class="d-lg-none d-sm-block d-xs-block" data-toggle="collapse" data-target=".navbar-collapse"
             routerLink="/contact-us"><button class="dropbtn">Contact</button> </a>
-          <a class="d-none d-lg-block d-xl-block" routerLink="/contact-us"><button
-              class="dropbtn">Contact</button> </a>
+          <a class="d-none d-lg-block d-xl-block" routerLink="/contact-us"><button class="dropbtn">Contact</button> </a>
+        </div>
       </li>
 
     </ul>
