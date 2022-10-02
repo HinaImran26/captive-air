@@ -86,4 +86,11 @@
       height: 200px;
   }
 
+  .section-0{
+    padding: 10px !important;
+  }
+
+  .card{
+    width: 100%;
+  }
 }
