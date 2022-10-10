@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid p-0">
     <div class="row">
         <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
             <img id="banner" src="../../../assets/images/1st-Image.jpeg" alt="">
@@ -8,24 +8,24 @@
         </div>
     </div>
 
-    <div class="col-md-12 section-0 d-flex justify-content-center p-5 my-4">
-        <!-- <div class="wrapper" *ngFor="let item of array1">
+    <div class="col-md-12 section-0  p-5 ">
+
+        <div class="card p-3" *ngFor="let item of array1">
             <details>
-                <summary>{{item}}</summary>
-                <ul *ngFor="let item of powerPlants">
-                    <li>{{item}}</li>
+                <summary>
+                    <h2 class="card-title m-0">{{item.title}}</h2>
+                </summary>
+                <ul class="mt-3" >
+                    <li *ngFor="let data of item.data">
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        {{data}}
+                    </li>
                 </ul>
+                <img class="card-img-bottom" src={{item.img}} alt="Card image cap" style="height: 12rem; width:100%">
             </details>
-        </div> -->
-
-        <div class="card" *ngFor="let item of array1">
-          
-                <img class="card-img-top" src={{item.img}} alt="Card image cap">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                    <h4 class="card-title">{{item.title}}</h4>
-                </div>
-            
         </div>
-
     </div>
+
 </div>

@@ -19,7 +19,7 @@
             <div class="content d-flex flex-column align-items-center justify-content-center">
                 <p class="mainheading mb-2">World Class Energy Efficient Solutions</p>
                 <p class="intro ">ENGINEERING SERVICES IN HEATING,VENTILATION, DEHUMIDIFICATION & AIR CONDITIONING</p>
-              <a routerLink="/about"><button class=" learn-more-btn btn-primary py-1">Learn More</button></a>
+                <a routerLink="/about"><button class=" learn-more-btn btn-primary py-1">Learn More</button></a>
             </div>
         </div>
 
@@ -186,24 +186,28 @@
         </div>
         <!-- row-end -->
 
-        <div class="col-md-12 text-center my-4">
-            <h1 class="heading mb-4">Total Client Satisfaction</h1>
-            <hr class="hr-underline">
-            <p class="paragraphs">Solutions through healthy, safe, sustainable & intelligent offerings</p>
+        <div class="col-md-12 p-0 text-center my-4 d-flex align-items-center justify-content-center section-1">
+            <img src="../../../assets/images/handshakeimg.jpg" alt="" style="height: 100%;
+            width: 100%;  filter: brightness(0.7); object-fit: cover;">
+            <div class="content">
+                <h1 class="heading" style="color: #fff; font-size: 40px;">Total Client Satisfaction</h1>
+                <!-- <hr class="hr-underline"> -->
+                <p class="paragraphs" style="color: #fff;">Solutions through healthy, safe, sustainable & intelligent offerings</p>
+            </div>
         </div>
 
 
         <div class="section-0 col-md-12 px-0 mb-4 d-flex align-items-center justify-content-center">
-            <img src="../../../assets/images/handshakeimg.jpg" alt="" style="height: 100%;
-            width: 100%;  filter: brightness(0.7);">
+            <!-- <img src="../../../assets/images/handshakeimg.jpg" alt="" style="height: 100%;
+            width: 100%;  filter: brightness(0.7);"> -->
 
-            <div class="content p-5 d-flex align-items-center justify-content-center">
+            <div class="p-5 d-flex align-items-center justify-content-center">
 
                 <div class="col-md-3" *ngFor="let item of array1">
                     <div class="card card2">
                         <div class="card-body">
-                            <h4 class="card-title">{{item.title}}</h4>
-                            <p class="card-text">{{item.desc}}</p>
+                            <h4 class="card-title" style="color:var(--blue-color)">{{item.title}}</h4>
+                            <p class="card-text" style="color: var(--grey-color);">{{item.desc}}</p>
                         </div>
                     </div>
                 </div>

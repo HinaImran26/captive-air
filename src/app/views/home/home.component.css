@@ -47,9 +47,13 @@
 }
 
 .section-0{
-    position: relative;
+    /* position: relative; */
     text-align: center;
-    height: 400px;
+}
+
+.section-1{
+   position: relative;
+   height: 20rem;
 }
 
 .card {
@@ -58,7 +62,7 @@
 
 .card2{
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid lightgrey;
     height: 11rem;
     pointer-events: none;
 }
@@ -68,7 +72,7 @@
 }
 
 .card2 *{
-    color: #fff;
+    color: var(--blue-color)
 }
 
 .card2 .card-title{
