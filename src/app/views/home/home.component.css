@@ -166,6 +166,7 @@ p,
 #client-logo {
     height: 200px;
     width: 200px;
+    object-fit: scale-down;
 }
 
 
@@ -301,21 +302,26 @@ i {
     }
 
     .section-0{
-        height: 200px;
-    }
+        height: fit-content;
+    
+    }   
 
-.section-0 .content{
+.section-0-a{
+    gap: 15px;
+}
+
+/* .section-0 .content{
     flex-direction: column;
     height: 100%;
     overflow-y: scroll;
     gap: 190px;
     justify-content: flex-start !important;
     padding: 15px !important;
-}
-
-/* .card-2{
-    height: fit-content;
 } */
+
+ .card-2{
+    height: fit-content;
+} 
     .content {
         padding: 3px;
     }
