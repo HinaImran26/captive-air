@@ -1,3 +1,7 @@
+.container-fluid {
+  overflow-x: hidden;
+}
+
 .mainimg {
   height: 300px;
   position: relative;
@@ -22,13 +26,14 @@
 }
 
 .card {
-  height: fit-content;
-  width: 50rem;
-  
+  height: 35rem;
+  width: 35rem;
+  overflow-y: auto;
+
 }
 
 .card-title {
-  color: var(--blue-color);
+  color: var(--red-color);
   font-size: 20px;
   text-align: center;
 }
@@ -38,9 +43,8 @@
   flex-wrap: wrap;
   gap: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var( --light-blue-color);
+  justify-content: center;
+  background-color: var(--light-grey-color);
 }
 
 
@@ -65,7 +69,7 @@ li {
   margin: 0 0 10px 0;
 }
 
-details > summary {
+/* details > summary {
   list-style: none;
 }
 
@@ -73,9 +77,25 @@ details > summary {
 .card-title:hover {
   color: var(--red-color);
  transition: 0.2s linear all;
+} */
+
+/* css for overflow scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--grey-color); 
+  border-radius: 10px;
+}
 
 @media(max-width:500px) {
   .mainimg {
@@ -105,16 +125,20 @@ details > summary {
 
   .card {
     width: 20rem;
-  }
-  .card-title{
-    font-size: 18px;
-  }
-  .card-title:hover {
-    color: var(--blue-color);
-   transition: none;
+    height: fit-content;
+    overflow-y: unset;
   }
 
-  .container-fluid{
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-title:hover {
+    color: var(--blue-color);
+    transition: none;
+  }
+
+  .container-fluid {
     overflow-x: hidden;
   }
 

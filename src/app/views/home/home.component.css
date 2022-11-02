@@ -427,6 +427,18 @@ i {
     width: 170px;
 }
 
+.card2{
+    height: fit-content !important;
+}
+
+.section-1{
+    height: 12rem;
+ }
+
+ .section-1 .content .heading{
+    font-size: 30px !important;
+ }
+
 /* css for overflow scroll bar */
 
 /* width */

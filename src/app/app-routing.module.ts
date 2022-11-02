@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorPageComponent } from './error-page/error-page.component';
 import { AboutComponent } from './views/about/about.component';
 import { ContactUsComponent } from './views/contact-us/contact-us.component';
 import { ExclusiveServicesComponent } from './views/exclusive-services/exclusive-services.component';
@@ -86,6 +87,12 @@ const routes: Routes = [
   path:'projects',
   component: ProjectsComponent
 }
+// ,
+
+// {
+//   path:'**',
+//   component: ErrorPageComponent
+// }
 ];
 
 @NgModule({

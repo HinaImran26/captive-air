@@ -23,7 +23,8 @@ import { ExclusiveServicesComponent } from './views/exclusive-services/exclusive
 import { OperationMaintenaneComponent } from './views/operation-maintenane/operation-maintenane.component';
 import { InstallationServicesComponent } from './views/installation-services/installation-services.component';
 import { ProjectsComponent } from './views/projects/projects.component';
-import { NewsHeaderComponent } from './shared/news-header/news-header.component'
+import { NewsHeaderComponent } from './shared/news-header/news-header.component';
+import { ErrorPageComponent } from './error-page/error-page.component'
 
 
 
@@ -49,6 +50,7 @@ import { NewsHeaderComponent } from './shared/news-header/news-header.component'
     InstallationServicesComponent,
     ProjectsComponent,
     NewsHeaderComponent,
+    ErrorPageComponent,
   
   ],
   imports: [
