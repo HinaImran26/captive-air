@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserModule, Meta } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -24,7 +23,8 @@ import { OperationMaintenaneComponent } from './views/operation-maintenane/opera
 import { InstallationServicesComponent } from './views/installation-services/installation-services.component';
 import { ProjectsComponent } from './views/projects/projects.component';
 import { NewsHeaderComponent } from './shared/news-header/news-header.component';
-import { ErrorPageComponent } from './error-page/error-page.component'
+import { ErrorPageComponent } from './error-page/error-page.component';
+
 
 
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  images:any[]=[
+  images: any[] = [
     "../../../assets/client-logos/Logos1.png",
     "../../../assets/client-logos/Logos2.png",
     "../../../assets/client-logos/Logos3.png",
@@ -63,32 +64,40 @@ export class HomeComponent implements OnInit {
     "../../../assets/client-logos/Logos53.png",
     "../../../assets/client-logos/Logos54.png",
     "../../../assets/client-logos/Logos55.png",
-    
+
   ]
 
 
-  sectors=[
-    {title:'Commercial buildings', icon:'bi-building'},
-    {title:'Oil & Gas', icon:'bi-fuel-pump'},
-    {title:'Power Plants', icon:'bi-lightning'},
-    {title:'Hotels & Resorts', icon:'bi-shop'},
-    {title:'Multinational food chains', icon:'bi-cup-hot'},
-    {title:'Textile & Automobile', icon:'bi-car-front'},
-    {title:'Hospitals & Pharmaceuticals', icon:'bi bi-hospital'},
-    {title:'Education', icon:'bi-mortarboard'},
+  sectors = [
+    { title: 'Commercial buildings', icon: 'bi-building' },
+    { title: 'Oil & Gas', icon: 'bi-fuel-pump' },
+    { title: 'Power Plants', icon: 'bi-lightning' },
+    { title: 'Hotels & Resorts', icon: 'bi-shop' },
+    { title: 'Multinational food chains', icon: 'bi-cup-hot' },
+    { title: 'Textile & Automobile', icon: 'bi-car-front' },
+    { title: 'Hospitals & Pharmaceuticals', icon: 'bi bi-hospital' },
+    { title: 'Education', icon: 'bi-mortarboard' },
   ]
 
 
-  array1=[{title:'Enhancing customer experience', desc:'Listening our customers is a top priority'},
-  {title:'Driving values to customer', desc:'Technological features, brand awareness, and customer satisfaction'},
-  {title:'Delivering best in class performance', desc:'Offering superior product of higher quality'},
-  {title:'Innovating sustainable solutions', desc:'Offering economically sound and environmentally healthy solutions that preserve the long term well-being of customers and the environment'},
-]
+  array1 = [{ title: 'Enhancing customer experience', desc: 'Listening our customers is a top priority' },
+  { title: 'Driving values to customer', desc: 'Technological features, brand awareness, and customer satisfaction' },
+  { title: 'Delivering best in class performance', desc: 'Offering superior product of higher quality' },
+  { title: 'Innovating sustainable solutions', desc: 'Offering economically sound and environmentally healthy solutions that preserve the long term well-being of customers and the environment' },
+  ]
 
-  constructor() { }
+  constructor(private meta: Meta) {
+    this.addTags();
+  }
 
-  ngOnInit(): void {
-   
+  ngOnInit(): void { }
+
+  addTags() {
+    this.meta.addTags([
+      { name: 'description', content: 'Captive Air is a dedicated engineering services company, dealing in installation of HVAC, Industrial Dehumidiﬁcation, Fireﬁghting & Plumbing systems.' },
+      { property: 'og:title', content: 'Engineering Services | Captive Air' },
+      { name: 'keywords', content: 'engineering services,engineering companies,engineering services company,engineering solutions,hvac' },
+    ])
   }
 
 }
