@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-installation-services',
@@ -17,13 +18,14 @@ export class InstallationServicesComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private meta: Meta) { }
 
   scrollbtn: any;
 
 
   ngOnInit(): void {
 
+    this.addTags();
     this.scrollbtn = document.getElementById('btn-back-to-top');
     // console.log(this.scrollbtn);
 
@@ -43,4 +45,13 @@ export class InstallationServicesComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
+
+
+  addTags() {
+    this.meta.addTags([
+      { name: 'description', content: 'Captive Air delivers quality services in HVAC, wastewater treatment, fire fighting systems & other maintenance and engineering solutions.' },
+      { property: 'og:title', content: 'Installation & Maintenance Services | Captive Air' },
+      { name: 'keywords', content: 'hvac,sewage system,wastewater treatment,fire fighting system,fire safety equipments,fire supression system,maintenance,' },
+    ])
+  }
 }

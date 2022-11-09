@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { from } from '../../../assets/fresh air/slider-imgs/';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-fresh-air-treatment',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FreshAirTreatmentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private meta: Meta) { }
   images: any[] = [
     "../../../assets/fresh air/img1.jpg",
     "../../../assets/fresh air/img2.jpg",
@@ -102,6 +102,16 @@ export class FreshAirTreatmentComponent implements OnInit {
 
   ]
   ngOnInit(): void {
+    this.addTags();
   }
+
+  addTags() {
+    this.meta.addTags([
+      { name: 'description', content: 'Captive Air deals in all types of fresh air treatments including industrial dehumidifiers, air purifiers & other engineering solutions.' },
+      { property: 'og:title', content: 'Fresh Air Treatment | Captive Air' },
+      { name: 'keywords', content: 'fresh air, dehumidifiers, air purifiers' },
+    ])
+  }
+
 
 }

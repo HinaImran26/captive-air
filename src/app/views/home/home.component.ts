@@ -86,11 +86,11 @@ export class HomeComponent implements OnInit {
   { title: 'Innovating sustainable solutions', desc: 'Offering economically sound and environmentally healthy solutions that preserve the long term well-being of customers and the environment' },
   ]
 
-  constructor(private meta: Meta) {
+  constructor(private meta: Meta) {}
+
+  ngOnInit(): void { 
     this.addTags();
   }
-
-  ngOnInit(): void { }
 
   addTags() {
     this.meta.addTags([

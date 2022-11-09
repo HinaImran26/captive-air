@@ -1,12 +1,14 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Meta } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-hvac',
   templateUrl: './hvac.component.html',
   styleUrls: ['./hvac.component.css']
 })
 export class HvacComponent implements OnInit, OnDestroy {
-  constructor(private router: Router) { }
+  constructor(private router: Router, private meta: Meta) { }
 
   RhossArray=[
     '../../../assets/images/Rhoss/Rhoss1.png',
@@ -63,6 +65,8 @@ export class HvacComponent implements OnInit, OnDestroy {
     //     window.location.reload();
     //     localStorage.setItem("hasRefreshed", "true");
     //   }, 500);
+    this.addTags();
+
   }
   ngOnDestroy(): void {
     // localStorage.removeItem("hasRefreshed")
@@ -83,6 +87,12 @@ export class HvacComponent implements OnInit, OnDestroy {
       window.open("https://www.tecnairlv.it/", "_blank");
   }
   
-
+  addTags() {
+    this.meta.addTags([
+      { name: 'description', content: 'Captive Air provides innovative services related to heating, ventilation, air conditioning systems & other engineering solutions' },
+      { property: 'og:title', content: 'HVAC Engineering | Captive Air' },
+      { name: 'keywords', content: 'hvac,air conditioning system' },
+    ])
+  }
 }
 
