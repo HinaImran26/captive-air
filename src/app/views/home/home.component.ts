@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
   images: any[] = [
     "../../../assets/client-logos/Logos1.png",
     "../../../assets/client-logos/Logos2.png",
-    "../../../assets/client-logos/Logos3.png",
     "../../../assets/client-logos/Logos4.png",
     "../../../assets/client-logos/Logos5.png",
     "../../../assets/client-logos/Logos6.png",
@@ -64,6 +63,7 @@ export class HomeComponent implements OnInit {
     "../../../assets/client-logos/Logos53.png",
     "../../../assets/client-logos/Logos54.png",
     "../../../assets/client-logos/Logos55.png",
+    "../../../assets/client-logos/Logos56.png",
 
   ]
 
