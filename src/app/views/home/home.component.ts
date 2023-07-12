@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,6 @@ export class HomeComponent implements OnInit {
     "../../../assets/client-logos/Logos7.png",
     "../../../assets/client-logos/Logos8.png",
     "../../../assets/client-logos/Logos9.png",
-    "../../../assets/client-logos/Logos10.png",
     "../../../assets/client-logos/Logos11.png",
     "../../../assets/client-logos/Logos12.png",
     "../../../assets/client-logos/Logos13.png",
@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit {
     "../../../assets/client-logos/Logos54.png",
     "../../../assets/client-logos/Logos55.png",
     "../../../assets/client-logos/Logos56.png",
-
+      // "../../../assets/client-logos/Logos10.png",
   ]
 
 
@@ -86,18 +86,17 @@ export class HomeComponent implements OnInit {
   { title: 'Innovating sustainable solutions', desc: 'Offering economically sound and environmentally healthy solutions that preserve the long term well-being of customers and the environment' },
   ]
 
-  constructor(private meta: Meta) {}
+  constructor(private meta: Meta, private title: Title) {}
 
   ngOnInit(): void { 
     this.addTags();
+    this.title.setTitle("Captive Air: World Class Engineering Specialist Company");
   }
 
   addTags() {
-    this.meta.addTags([
+    this.meta.updateTag(
       { name: 'description', content: 'Captive Air is a dedicated engineering services company, dealing in installation of HVAC, Industrial Dehumidiﬁcation, Fireﬁghting & Plumbing systems.' },
-      { property: 'og:title', content: 'Engineering Services | Captive Air' },
-      { name: 'keywords', content: 'engineering services,engineering companies,engineering services company,engineering solutions,hvac' },
-    ])
+    )
   }
 
 }

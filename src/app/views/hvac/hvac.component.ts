@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Meta } from '@angular/platform-browser';
+import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-hvac',
@@ -8,9 +9,9 @@ import { Meta } from '@angular/platform-browser';
   styleUrls: ['./hvac.component.css']
 })
 export class HvacComponent implements OnInit, OnDestroy {
-  constructor(private router: Router, private meta: Meta) { }
+  constructor(private router: Router, private meta: Meta, private title: Title) { }
 
-  RhossArray=[
+  RhossArray = [
     '../../../assets/images/Rhoss/Rhoss1.png',
     '../../../assets/images/Rhoss/Rhoss2.png',
     '../../../assets/images/Rhoss/Rhoss3.png',
@@ -21,7 +22,7 @@ export class HvacComponent implements OnInit, OnDestroy {
     '../../../assets/images/Rhoss/Rhoss8.png',
   ]
 
-  BushArray=[
+  BushArray = [
     '../../../assets/images/Bush/bush1.png',
     '../../../assets/images/Bush/bush2.png',
     '../../../assets/images/Bush/bush3.png',
@@ -30,11 +31,11 @@ export class HvacComponent implements OnInit, OnDestroy {
     '../../../assets/images/Bush/bush6.png',
   ]
 
-  technairArray=[
+  technairArray = [
     '../../../assets/images/technair/tech1.png'
   ]
 
-  kingsunArray=[
+  kingsunArray = [
     '../../../assets/images/kingsun/kingsun1.png',
     '../../../assets/images/kingsun/kingsun2.png',
     '../../../assets/images/kingsun/kingsun3.png',
@@ -42,14 +43,14 @@ export class HvacComponent implements OnInit, OnDestroy {
 
   ]
 
-  haltonArray=[
+  haltonArray = [
     '../../../assets/images/halton/halton1.png',
     '../../../assets/images/halton/halton2.jpg',
     '../../../assets/images/halton/halton3.jpg',
 
   ]
 
-    auxArray=[
+  auxArray = [
     '../../../assets/images/auxx/aux1.png',
     '../../../assets/images/auxx/aux2.png',
     '../../../assets/images/auxx/aux3.png',
@@ -66,6 +67,7 @@ export class HvacComponent implements OnInit, OnDestroy {
     //     localStorage.setItem("hasRefreshed", "true");
     //   }, 500);
     this.addTags();
+    this.title.setTitle("HVAC Solutions by Captive Air");
 
   }
   ngOnDestroy(): void {
@@ -75,24 +77,25 @@ export class HvacComponent implements OnInit, OnDestroy {
   navigate(site: any) {
     if (site === 'rhoss')
       window.open("https://www.rhoss.it/the-group/", "_blank");
-      if (site === 'bush')
+    if (site === 'bush')
       window.open("https://dunham-bush.com/our-products/", "_blank");
-      if (site === 'aux')
+    if (site === 'aux')
       window.open("https://www.auxcac.cn", "_blank");
-      if (site === 'halton')
+    if (site === 'halton')
       window.open(" https://www.halton.com", "_blank");
-      if (site === 'kingsun')
+    if (site === 'kingsun')
       window.open("https://kingsunct.com/en/products", "_blank");
-      if (site === 'technair')
+    if (site === 'technair')
       window.open("https://www.tecnairlv.it/", "_blank");
   }
-  
+
   addTags() {
-    this.meta.addTags([
-      { name: 'description', content: 'Captive Air provides innovative services related to heating, ventilation, air conditioning systems & other engineering solutions' },
-      { property: 'og:title', content: 'HVAC Engineering | Captive Air' },
-      { name: 'keywords', content: 'hvac,air conditioning system' },
-    ])
+    this.meta.updateTag(
+      {
+        name: 'description',
+        content: 'Discover top-notch HVAC solutions at Captive Air'
+      },
+    )
   }
 }
 

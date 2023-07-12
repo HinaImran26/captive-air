@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-fire-protection',
@@ -26,18 +27,20 @@ export class FireProtectionComponent implements OnInit {
     "../../../assets/fire-protection/standart-5.png",
     "../../../assets/fire-protection/standart-6.png",
   ]
-  constructor(private meta: Meta) { }
+  constructor(private meta: Meta, private title: Title) { }
 
   ngOnInit(): void {
     this.addTags();
+    this.title.setTitle("Fire Protection Services");
   }
 
   addTags() {
-    this.meta.addTags([
-      { name: 'description', content: 'Captive Air offers highest quality supply of ﬁre ﬁghting systems, fire safety equipments, fire supression systems & other engineering solutions.' },
-      { property: 'og:title', content: 'Fire Fighting Systems | Captive Air' },
-      { name: 'keywords', content: 'fire safety,fire hazard,Fire fighting,fire fighting system,fire safety equipments,fire supression system' },
-    ])
+    this.meta.updateTag(
+      {
+        name: 'description',
+        content: 'Ensure safety with Captive Airs fire protection services'
+      },
+    )
   }
 
 }

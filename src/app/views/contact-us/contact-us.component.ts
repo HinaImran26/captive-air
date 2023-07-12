@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { Meta } from '@angular/platform-browser';
+import { Title } from "@angular/platform-browser";
 
 
 
@@ -18,10 +20,21 @@ export class ContactUsComponent implements OnInit {
     { location: 'Karachi', address: 'Suite No.402, 4th Floor, M.Yousuf Chamber Off Shahrah-e Faisal', image: '../../../assets/contact-us/karachi-office.jpg', mapLink: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14479.459563675162!2d67.0832691!3d24.8684637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5865b22efc805eb1!2sM%20Yousuf%20Chamber!5e0!3m2!1sen!2s!4v1660909391180!5m2!1sen!2s' },
   ]
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(private sanitizer: DomSanitizer, private meta: Meta, private title: Title) { }
 
   ngOnInit(): void {
     // this.mapSource= this.sanitizer.bypassSecurityTrustResourceUrl(this.locations[0].mapLink);
+    this.addTags();
+    this.title.setTitle("Contact Us");
+  }
+
+  addTags() {
+    this.meta.updateTag(
+      {
+        name: 'description',
+        content: 'Reach out to Captive Air for HVAC solutions and services'
+      },
+    )
   }
 
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AfterViewInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
+import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-projects',
@@ -8,7 +10,7 @@ import { AfterViewInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor( private meta: Meta, private title: Title) { }
 
   array1 = [
     {
@@ -100,7 +102,17 @@ export class ProjectsComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.addTags();
+    this.title.setTitle("Captive Air Projects");
+  }
 
+  addTags() {
+    this.meta.updateTag(
+      {
+        name: 'description',
+        content: 'Explore successful projects by Captive Air'
+      },
+    )
   }
 
 }
