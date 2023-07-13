@@ -58,7 +58,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     AppRoutingModule,
    
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  // providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
