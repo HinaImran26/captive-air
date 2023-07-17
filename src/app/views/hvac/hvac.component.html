@@ -1,7 +1,8 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
-            <img id="banner" src="../../../assets/images/sets-cooling-towers-data-center-building.webp" alt="image of cooling towers">
+            <img id="banner" src="../../../assets/images/sets-cooling-towers-data-center-building.webp"
+                alt="image of cooling towers">
 
             <div class="content text-center">
                 <h1 class="mainheading m-0">Heating Ventilation Air Conditioning Refrigeration</h1>
@@ -11,7 +12,8 @@
         <div class="container px-5 text-center my-4">
             <h2 class="headings">Innovative Products, Services & Solutions </h2>
             <hr class="hr-underline">
-            <p class="text-justify">We provide innovative products, controls, services and solutions to meet the Heating, Ventilation and
+            <p class="text-justify">We provide innovative products, controls, services and solutions to meet the
+                Heating, Ventilation and
                 Cooling needs while enhancing building performance, energy efﬁciency and sustainability.
                 Through our leading brands we offer an innovative and complete product portfolio, including Chillers,
                 Air Handling Units, Fan Coil Units, Packaged type Air conditioners Cooling Towers, OT ceilings, Data
@@ -24,26 +26,21 @@
         <div class="col-md-12 text-center px-5 section-1">
             <h3 class="brand-heading headings">Air Conditioning Heating & Ventilation Brands</h3>
             <hr class="hr-underline">
+
             <div class="row my-4">
                 <div class="col-md-12 mb-5 d-flex justify-content-center">
                     <div class="card d-flex flex-row align-items-center p-2">
-                        <div class="card-section" style="width:33.33%;">
-                            <img class="client-flyer" src="../../../assets/images/Rhoss/rhoss-flyer.jpg" alt="image of Rhoss company flyer">
-                        </div>
-                        <div class="card-section" style="width:33.33%; height: 100%;">
-                            <img class="logo" src="../../../assets/logos/rhoss-logo.png" alt="rhoss logo"
-                                (click)="navigate('rhoss')">
+                        <div class="test card-section flex-column w-50 h-100">
+                            <h4 class="card-title m-0">Rhoss S.P.A NIBE Group Italy </h4>
+                            <img class="logo" src="../../../assets/logos/rhoss-logo.png" alt="rhoss logo">
                             <div class="card-body ">
-                                <h4 class="card-title">Rhoss S.P.A NIBE Group Italy </h4>
                                 <p class="card-para">Since 1968 Rhoss has been a guarantee for innovation, quality and
                                     top level of services. Clean and green heating and cooling systems.
                                     A complete product offer for HVAC specialists.
-                                    Eurovent Certified
+                                    Eurovent Certified.
                                 </p>
+                                <span>visit <a href="https://www.rhoss.it/the-group/">www.rhoss.it</a> for more.</span>
                             </div>
-                        </div>
-                        <div class="test card-section" style="width:33.33%;">
-                            <!-- <app-hvac-products class="mt-5 p-2"></app-hvac-products> -->
                             <div id="carouselRhoss" class="carousel slide" data-ride="carousel" data-interval="1500">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" *ngFor="let item of RhossArray let i = index"
@@ -63,41 +60,41 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-section w-50">
+                            <img class="client-flyer" src="../../../assets/images/Rhoss/rhoss-flyer.jpg"
+                                alt="image of Rhoss company flyer">
+                        </div>
                     </div>
                 </div>
-                <!-- card end -->
+            </div>
+            <!-- card end -->
 
-                
-
+            <div class="row my-4">
                 <div class="col-md-12 mb-5 d-flex justify-content-center">
                     <div class="card d-flex flex-row align-items-center p-2">
-                        <div class="card-section" style="width:33.33%;">
-                            <img class="client-flyer" src="../../../assets/images/technair/technair-flyer.jpg" alt="image of technair flyer">
-                        </div>
-                        <div class="card-section" style="width:33.33%; height: 100%;">
-                            <img class="logo" src="../../../assets/logos/teknair-logo.png" alt=""
-                                (click)="navigate('technair')">
+                        <div class="test card-section flex-column w-50 h-100">
+                            <h4 class="card-title m-0">TECNAIR LV Italy</h4>
+                            <img class="logo" src="../../../assets/logos/teknair-logo.png" alt="rhoss logo"
+                                style="object-fit:cover">
                             <div class="card-body ">
-                                <h4 class="card-title">TECNAIR LV Italy</h4>
-                                <p class="card-para">We represent TECNAIR LV Italy is the part of the LU-VE Group
+                                <p class="card-para">We represent TECNAIR LV Italy. It is the part of the LU-VE Group
+                                    and
                                     has been increasingly in the forefront, in Europe and in the world, of the Close
-                                    Control Air Conditioning” sector.
-                                    One of the oldest global commercial heating and air conditioning equipment
+                                    Control Air Conditioning” sector. One of the oldest global commercial heating and
+                                    air conditioning equipment
                                     manufacturer.
                                     Compliance to the European Regulation1253/2014/EU ErP NRVU.
                                     Designed to meet the requirements of environmentally sustainable development.
-                                    EC Certification
-
+                                    EC Certification.
                                 </p>
+                                <span>visit <a href="https://www.tecnairlv.it/">https://www.tecnairlv.it/</a> for
+                                    more.</span>
                             </div>
-                        </div>
-                        <div class="test card-section" style="width:33.33%;">
-                            <!-- <app-hvac-products class="mt-5 p-2"></app-hvac-products> -->
                             <div id="carouselTechnair" class="carousel slide" data-ride="carousel" data-interval="1500">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" *ngFor="let item of technairArray let i = index"
                                         [ngClass]="{'active': i == 0 }">
-                                        <img id="products3" class="d-block" [src]=item alt="logo slides">
+                                        <img id="products1" class="d-block" [src]=item alt="logo slides">
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselTechnair" role="button"
                                         data-slide="prev">
@@ -112,37 +109,37 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-section w-50">
+                            <img class="client-flyer" src="../../../assets/images/technair/technair-flyer.jpg"
+                                alt="image of teknair company flyer" style="object-fit: fill;">
+                        </div>
                     </div>
                 </div>
-                <!-- card end -->
+            </div>
+            <!-- card end -->
 
-
+            <div class="row my-4">
                 <div class="col-md-12 mb-5 d-flex justify-content-center">
                     <div class="card d-flex flex-row align-items-center p-2">
-                        <div class="card-section" style="width:33.33%;">
-                            <img class="client-flyer" src="../../../assets/images/Bush/DB-flyer.jpg" alt="image of dunham bush flyer">
-                        </div>
-                        <div class="card-section" style="width:33.33%; height: 100%;">
-                            <img class="logo" src="../../../assets/logos/DB-logo.png" alt=""
-                                (click)="navigate('bush')">
+                        <div class="test card-section flex-column w-50 h-100">
+                            <h4 class="card-title m-0">Dunham-Bush Malaysia</h4>
+                            <img class="logo" src="../../../assets/logos/DB-logo.png" alt="DB logo"
+                                style="object-fit:cover">
                             <div class="card-body ">
-                                <h4 class="card-title">Dunham-Bush Malaysia</h4>
-                                <p class="card-para">We represent Dunham-Bush Malaysia founded in USA in 1984
+                                <p class="card-para">We represent Dunham-Bush Malaysia, founded in USA in 1984.
                                     One of the oldest global commercial heating and air conditioning equipment
                                     manufacturer.
                                     Clean and green heating and cooling systems.
-                                    AHRI Certified
-
+                                    AHRI Certified.
                                 </p>
+                                <span>visit <a href="https://dunham-bush.com/our-products/">https://dunham-bush.com</a>
+                                    for more.</span>
                             </div>
-                        </div>
-                        <div class="test card-section" style="width:33.33%;">
-                
                             <div id="carouselBush" class="carousel slide" data-ride="carousel" data-interval="1500">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active" *ngFor="let item of  BushArray let i = index"
+                                    <div class="carousel-item active" *ngFor="let item of BushArray let i = index"
                                         [ngClass]="{'active': i == 0 }">
-                                        <img id="products2" class="d-block" [src]=item alt="logo slides">
+                                        <img id="products1" class="d-block" [src]=item alt="logo slides">
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselBush" role="button"
                                         data-slide="prev">
@@ -157,36 +154,37 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-section w-50">
+                            <img class="client-flyer" src="./../../assets/images/Bush/DB-flyer.jpg"
+                                alt="image of DB company flyer" style="object-fit: contain;">
+                        </div>
                     </div>
                 </div>
-                <!-- card end -->
-
-                <!-- <div class="col-md-12 mb-5 d-flex justify-content-center">
+            </div>
+            <!-- card end -->
+            <div class="row my-4">
+                <div class="col-md-12 mb-5 d-flex justify-content-center">
                     <div class="card d-flex flex-row align-items-center p-2">
-                        <div class="card-section" style="width:33.33%;">
-                            <img class="client-flyer" src="../../../assets/images/halton/halton-flyer.jpg" alt="">
-                        </div>
-                        <div class="card-section" style="width:33.33%; height: 100%;">
-                            <img class="logo" src="../../../assets/logos/halton_logo.png" alt=""
-                                (click)="navigate('halton')">
+                        <div class="test card-section flex-column w-50 h-100">
+                            <h4 class="card-title m-0">Halton Malaysia</h4>
+                            <img class="logo" src="../../../assets/logos/halton_logo.png" alt="halton logo"
+                                style="object-fit:cover">
                             <div class="card-body ">
-                                <h4 class="card-title">Halton Malaysia</h4>
-                                <p class="card-para">We represent Halton Malaysia
-                                    Global technology leader in indoor climate solution provider
+                                <p class="card-para">We represent Halton Malaysia,
+                                    Global technology leader in indoor climate solution provider.
                                     A mission to enable people’s wellbeing in healthy environments.
                                     Safe Comfortable and productive Indoor environment solutions.
                                     Energy Efficient sustainable ventilation solutions.
-                                    UL Listed
+                                    UL Listed.
                                 </p>
+                                <span>visit <a href="https://www.halton.com">https://www.halton.com</a>
+                                    for more.</span>
                             </div>
-                        </div>
-                        <div class="test card-section" style="width:33.33%;">
-                 
-                            <div id="carouselHalton" class="carousel slide" data-ride="carousel" data-interval="2000">
+                            <div id="carouselHalton" class="carousel slide" data-ride="carousel" data-interval="1500">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" *ngFor="let item of haltonArray let i = index"
                                         [ngClass]="{'active': i == 0 }">
-                                        <img id="products4" class="d-block" [src]=item alt="logo slides">
+                                        <img id="products1" class="d-block" [src]=item alt="logo slides">
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselHalton" role="button"
                                         data-slide="prev">
@@ -201,39 +199,40 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-section w-50">
+                            <img class="client-flyer" src="./../../assets/images/halton/halton-flyer.jpg"
+                                alt="image of halton company flyer" style="object-fit: contain;">
+                        </div>
                     </div>
-                </div> -->
-                <!-- card end -->
+                </div>
+            </div>
+            <!-- card end -->
 
+            <div class="row my-4">
                 <div class="col-md-12 mb-5 d-flex justify-content-center">
                     <div class="card d-flex flex-row align-items-center p-2">
-                        <div class="card-section" style="width:33.33%;">
-                            <img class="client-flyer" src="../../../assets/images/kingsun/kingsun-flyer.jpg" alt="image of kingsun flyer">
-                        </div>
-                        <div class="card-section" style="width:33.33%; height: 100%;">
-                            <img class="logo" src="../../../assets/logos/kingsun-logo.png" alt=""
-                                (click)="navigate('kingsun')">
+                        <div class="test card-section flex-column w-50 h-100">
+                            <h4 class="card-title m-0">KINGSUN China</h4>
+                            <img class="logo" src="../../../assets/logos/kingsun-logo.png" alt="kingsun logo"
+                                style="object-fit:contain">
                             <div class="card-body ">
-                                <h4 class="card-title">KINGSUN China </h4>
-                                <p class="card-para">We represent KINGSUN China Cooling Towers
+                                <p class="card-para">We represent KINGSUN China, Cooling Towers
                                     Persistence and Competitive Strength.
                                     One of the oldest global commercial heating and air conditioning equipment
                                     manufacturer.
-                                    Benefit yourselves from the power of our system integration service
-                                    Trust winning product
-                                    Total customized solution
-                                    TUV and CTI Certification
-
+                                    Benefit yourselves from the power of our system integration service.
+                                    Trust winning product.
+                                    Total customized solution.
+                                    TUV and CTI Certification.
                                 </p>
+                                <span>visit <a href="https://kingsunct.com/en/products">https://kingsunct.com</a>
+                                    for more.</span>
                             </div>
-                        </div>
-                        <div class="test card-section" style="width:33.33%;">
-                            <!-- <app-hvac-products class="mt-5 p-2"></app-hvac-products> -->
                             <div id="carouselKingsun" class="carousel slide" data-ride="carousel" data-interval="1500">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active" *ngFor="let item of  kingsunArray let i = index"
+                                    <div class="carousel-item active" *ngFor="let item of kingsunArray let i = index"
                                         [ngClass]="{'active': i == 0 }">
-                                        <img id="products5" class="d-block" [src]=item alt="logo slides">
+                                        <img id="products1" class="d-block" [src]=item alt="logo slides">
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselKingsun" role="button"
                                         data-slide="prev">
@@ -248,36 +247,38 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-section w-50">
+                            <img class="client-flyer" src="../../../assets/images/kingsun/kingsun-flyer.jpg"
+                                alt="image of kingsun company flyer" style="object-fit: contain;">
+                        </div>
                     </div>
                 </div>
-                <!-- card end -->
+            </div>
+            <!-- card end -->
 
+            <div class="row my-4">
                 <div class="col-md-12 mb-5 d-flex justify-content-center">
                     <div class="card d-flex flex-row align-items-center p-2">
-                        <div class="card-section" style="width:33.33%;">
-                            <img class="client-flyer" src="../../../assets/images/auxx/aux-flyer.jpg" alt="image of aux flyer">
-                        </div>
-                        <div class="card-section" style="width:33.33%; height: 100%;">
-                            <img class="logo" src="../../../assets/logos/aux-logo.png" alt=""
-                                (click)="navigate('aux')" style="object-fit:scale-down">
+                        <div class="test card-section flex-column w-50 h-100">
+                            <h4 class="card-title m-0">AUX China</h4>
+                            <img class="logo" src="../../../assets/logos/aux-logo.png" alt="aux logo"
+                                style="object-fit:contain">
                             <div class="card-body ">
-                                <h4 class="card-title">AUX China</h4>
-                                <p class="card-para">We represent AUX China is the 3rd largest manufacturer of VRF and
-                                    light commercial air conditioning systems is an enterprise group established in
+                                <p class="card-para">We represent AUX China, the 3rd largest manufacturer of VRF and
+                                    light commercial air conditioning systems. It is an enterprise group established in
                                     1986.
-                                    Sustainable heating and air conditioning solutions
+                                    Sustainable heating and air conditioning solutions.
                                     Full range of VRF systems.
                                     AHRI Certified.
                                 </p>
+                                <span>visit <a href="https://www.auxcac.cn">https://www.auxcac.cn</a>
+                                    for more.</span>
                             </div>
-                        </div>
-                        <div class="test card-section" style="width:33.33%;">
-                            <!-- <app-hvac-products class="mt-5 p-2"></app-hvac-products> -->
                             <div id="carouselAux" class="carousel slide" data-ride="carousel" data-interval="1500">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active" *ngFor="let item of  auxArray let i = index"
+                                    <div class="carousel-item active" *ngFor="let item of auxArray let i = index"
                                         [ngClass]="{'active': i == 0 }">
-                                        <img id="products6" class="d-block" [src]=item alt="logo slides">
+                                        <img id="products1" class="d-block" [src]=item alt="logo slides">
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselAux" role="button"
                                         data-slide="prev">
@@ -292,15 +293,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-section w-50">
+                            <img class="client-flyer" src="../../../assets/images/auxx/aux-flyer.jpg"
+                                alt="image of aux company flyer" style="object-fit: scale-down;">
+                        </div>
                     </div>
                 </div>
-                <!-- card end -->
-
-
-
-
-
-
-
             </div>
+            <!-- card end -->
+
         </div>
+    </div>

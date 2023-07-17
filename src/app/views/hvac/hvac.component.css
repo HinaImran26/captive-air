@@ -40,13 +40,13 @@ p {
 .logo {
     height: 60px;
     width: 150px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .card {
-    width: 85%;
-    height: 24rem;
-    background: var(--light-grey-color);
+    width: 80%;
+    height: 32rem;
+    /* background: var(--light-grey-color); */
     /* cursor: pointer; */
 }
 
@@ -62,14 +62,17 @@ p {
     text-overflow: ellipsis; */
 }
 
-.card:hover {
+/* .card:hover {
     transform: scale(1.05, 1.05);
     transition: all 0.2s linear;
-}
+} */
 
 .card-title {
     font-size: 20px;
-    color: var(--blue-color);
+    color: white;
+    background: var(--blue-color);
+    padding: 8px 10px;
+    border-radius: 6px;
     font-weight: 700;
 }
 
@@ -145,12 +148,13 @@ background: var(--blue-color);
 }
 
 .client-flyer {
-    height: 350px;
+    height: 500px;
     width: 100%;
+    object-fit: contain;
 }
 
 
-@media(max-width:500px) {
+@media(max-width:768px) {
 
     .mainimg{
         height: 202px;
