@@ -151,6 +151,7 @@ background: var(--blue-color);
     height: 500px;
     width: 100%;
     object-fit: contain;
+    max-width: 400px;
 }
 
 

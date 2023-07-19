@@ -10,11 +10,11 @@ import { Title } from "@angular/platform-browser";
 })
 export class InstallationServicesComponent implements OnInit {
 
-  array1 = [{ title: 'Ducting & Piping', link: '#ducting' },
-  { title: 'Plumbing', link: '#plumbing' },
-  { title: 'Fire Fighting', link: '#fire-fight' },
-  { title: 'Operation & Maintenance', link: '#op-main' },
-  { title: 'Exclusive Services', link: '#ex-services' },]
+  array1 = [{ title: 'Ducting & Piping', id: 'ducting' },
+  { title: 'Plumbing', id: 'plumbing' },
+  { title: 'Fire Fighting', id: 'fire-fight' },
+  { title: 'Operation & Maintenance', id: 'op-main' },
+  { title: 'Exclusive Services', id: 'ex-services' },]
 
 
 
@@ -57,4 +57,9 @@ export class InstallationServicesComponent implements OnInit {
       },
     )
   }
+
+scroll(id:any){
+  document.getElementById(id)?.scrollIntoView({behavior:'smooth'})
+}
+
 }

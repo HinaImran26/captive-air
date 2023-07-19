@@ -22,14 +22,12 @@
 
     <div class="col-md-12 section-1 mt-5">
         <div *ngFor="let item of array1">
-            <a href={{item.link}} style="text-decoration:none">
-                <div class="card">
+                <div class="card" (click)="scroll(item.id)">
                     <!-- <img class="card-img-top" src="../../../assets/images/fire detection.jpeg" alt="Card image cap"> -->
                     <div class="card-body p-0 text-center">
                         <h4 class="card-title m-0">{{item.title}}</h4>
                     </div>
                 </div>
-            </a>
         </div>
     </div>
 
