@@ -1,12 +1,16 @@
 <div class="container-fluid">
-    <div class="row justify-content-center">
+
+    <div class="row">
         <div class="mainimg col-md-12 px-0 d-flex align-items-center justify-content-center">
-            <img id="banner" src="../../../assets/images/sets-cooling-towers-data-center-building.webp" alt="image of cooling towers">
+            <img id="banner" src="../../../assets/images/sets-cooling-towers-data-center-building.webp"
+                alt="image of cooling towers">
             <div class="content">
                 <h1 class="mainheading text-center m-0">Fresh Air Treatment & Dessicant Dehumidification</h1>
             </div>
         </div>
+    </div>
 
+    <div class="row">
         <div class="col-md-12 p-5 my-3 text-center section-0">
             <h2 class="headings">The forefront of Dehumidification & Industrial Air Treatment Technology</h2>
             <hr class="hr-underline">
@@ -14,7 +18,6 @@
                 Dehumidification solution
                 providers. </p>
         </div>
-
         <div class="col-md-12 d-flex align-items-center justify-content-center" id="slider">
 
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
@@ -34,51 +37,56 @@
                 </a>
             </div>
         </div>
+    </div>
 
+    <div class="row">
         <div class="d-flex align-items-center justify-content-center m-3 w-100" id="expBanner">
             <h2 class="headings col-md-12 p-5">OVER 20 YEARS OF EXPERIENCE AS A TRUSTED ENERGY RECOVERY AND
                 DEHUMIDIFICATION SOLUTION PROVIDERS </h2>
         </div>
+    </div>
 
-        <section class="section-1 w-100  my-5">
-            <div class="col-md-12 h-100 p-5 d-flex">
-                <div class="col-md-6 py-3">
-                    <img class="logos" src="../../../assets/fresh air/bry-air-logo.png" alt="bry air logo">
-                    <p class="paragraphs my-2">We represent Bry Air Malaysia founded in 1964 offers wide range of energy
-                        efficient solutions
-                        catering to all your needs </p>
-                    <ul>
-                        <li *ngFor="let item of bryProducts">
-                            <svg class="icon">
-                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
-                            </svg>
-                            <span>{{item}}</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6 p-0 d-flex justify-content-end align-items-center section-1a">
-                    <img src="../../../assets/fresh air/freshairgirl.jpeg"
-                        style="height: 100%;width: 55%; object-fit: fill;" alt="image of a girl enjoying fresh air">
-                </div>
-
+    <div class="row d-flex justify-content-center mb-3">
+        <div class="card p-5 d-flex flex-row" style="width: 70rem;">
+            <div class="col-md-6">
+                <img class="logos" src="../../../assets/fresh air/bry-air-logo.png" alt="bry air logo">
+                <p class="paragraphs my-2">We represent Bry Air Malaysia founded in 1964 offers wide range of energy
+                    efficient solutions
+                    catering to all your needs </p>
+                <ul>
+                    <li *ngFor="let item of bryProducts">
+                        <svg class="icon">
+                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                        </svg>
+                        <span>{{item}}</span>
+                    </li>
+                </ul>
             </div>
-        </section>
 
+            <div class="col-md-6 p-0 d-flex justify-content-end align-items-center section-1a">
+                <img src="../../../assets/fresh air/freshairgirl.jpeg"
+                    style="height: 100%;width: 80%; object-fit: contain;" alt="image of a girl enjoying fresh air">
+            </div>
+        </div>
 
-        <div class="mt-5 mb-4 col-md-12 section-1-2">
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-12 section-1-2">
             <h2 class="headings  text-center">WIDE APPLICATION RANGE</h2>
             <p class="paragraphs text-center">Pharmaceuticals . Cold Stores.Data Centers . Plastics Processing & Process
                 Industries .
                 Swimming Pools . Farm Houses . Office Buildings </p>
         </div>
+    </div>
 
- 
-        <section class="section-2 w-100  my-5">
-            <div class="col-md-12 h-100 px-5 py-2 d-flex">
-                <div class="col-md-6 py-3 d-flex flex-column justify-content-center">
+    <div class="d-flex row justify-content-center flex-row p-5">
+        <section class="section-2 col-md-6">
+            <div class=" h-100 p-5 d-flex card">
+                <div class="d-flex flex-column justify-content-center">
                     <h2 class="subheadings">DEHUMIDIFIERS</h2>
-                    <p class="paragraphs my-2">Bry-Air specializes in the manufacturing of desiccant dehumidifiers</p>
+                    <p class="paragraphs my-2">Bry-Air specializes in the manufacturing of desiccant dehumidifiers
+                    </p>
                     <ul>
                         <li *ngFor="let item of FLSeries">
                             <svg class="icon">
@@ -103,16 +111,13 @@
 
                 </div>
 
-                <div class="col-md-6 p-0 d-flex justify-content-end section-2a">
+                <div class="p-0 d-flex justify-content-center section-2a">
                     <img src="../../../assets/fresh air/FLDehumid.jpg" style="height: 100%;width: 60%;" alt="">
                 </div>
             </div>
         </section>
-
-
-
-        <div class="col-md-12 section-3 p-5 d-flex align-items-center">
-            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
+        <div class="section-3 col-md-6">
+            <div class="h-100 p-5 d-flex card">
                 <h2 class="subheadings">COMPACT DEHUMIDIFIERS FFB SERIES</h2>
                 <p class="paragraphs">With varied options to choose from, these dehumidifiers find their abodes with
                     leading
@@ -137,90 +142,98 @@
                         </li>
                     </ul>
                 </details>
+                <div class=" d-flex justify-content-center section-3a">
+                    <img src="../../../assets/fresh air/compactDehumid.jpg" style="height: 100%;width: 40%;" alt="">
+                </div>
             </div>
-            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6 d-flex justify-content-end section-3a">
-                <img src="../../../assets/fresh air/compactDehumid.jpg" style="height: 100%;width: 40%;" alt="">
-            </div>
+
         </div>
+    </div>
 
 
+    <div class="row d-flex justify-content-center my-3 p-5">
         <h2 class="headings text-center my-4 col-md-12">FRESH AIR SOLUTIONS</h2>
-        <div class="row section-4 p-5  d-flex align-items-center">
-            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
-                <h2 class="subheadings">ENERGY RECOVERY WHEELS (HRWS)</h2>
-                <p class="paragraphs">The EcoFresh Energy Recovery Wheel, which recovers total energy
-                    (sensible as well as latent).
-                    We offer the Highest Recovery Enthalpy Wheels in the world
-                    (Aluminum substrate coated with a choice of desiccants).</p>
+        <div class="col-md-12 d-flex" style="gap:15px">
+            <div class="col-md-6 section-4 p-5 d-flex card">
+                <div class="">
+                    <h2 class="subheadings">ENERGY RECOVERY WHEELS (HRWS)</h2>
+                    <p class="paragraphs">The EcoFresh Energy Recovery Wheel, which recovers total energy
+                        (sensible as well as latent).
+                        We offer the Highest Recovery Enthalpy Wheels in the world
+                        (Aluminum substrate coated with a choice of desiccants).</p>
 
-                <details>
-                    <summary>Read More</summary>
-                    <h2 class="headings">Benefits of EcoFresh Energy Recovery Wheels</h2>
+                    <details>
+                        <summary>Read More</summary>
+                        <h2 class="headings">Benefits of EcoFresh Energy Recovery Wheels</h2>
+                        <ul>
+                            <li *ngFor="let item of ecoFreshAdv">
+                                <svg class="icon">
+                                    <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                                </svg>
+                                <span>{{item}}</span>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img src="../../../assets/fresh air/energywheel.jpg" style="height: 100%;width: 40%;"
+                        alt="image of energy recovering wheel">
+                </div>
+            </div>
+            <div class="col-md-6 section-5 p-5 d-flex card">
+                <div class="">
+                    <h2 class="subheadings">ENERGY RECOVERY VENTILATORS</h2>
+                    <p class="paragraphs"> ERVs address the basic requirements of a commercial energy recovery
+                        ventilator
+                        Including High energy transfer efficiency (both sensible and latent).</p>
                     <ul>
-                        <li *ngFor="let item of ecoFreshAdv">
+                        <li>
                             <svg class="icon">
                                 <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
                             </svg>
-                            <span>{{item}}</span>
+                            <span>Economical first cost</span>
                         </li>
-                    </ul>
-                </details>
-            </div>
-            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6 d-flex justify-content-end section-4a">
-                <img src="../../../assets/fresh air/energywheel.jpg" style="height: 100%;width: 40%;" alt="image of energy recovering wheel">
-            </div>
-        </div>
-
-
-        <div class="col-md-12 section-5 p-5 my-4 d-flex align-items-center">
-            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
-                <h2 class="subheadings">ENERGY RECOVERY VENTILATORS</h2>
-                <p class="paragraphs"> ERVs address the basic requirements of a commercial energy recovery ventilator
-                    Including High energy transfer efficiency (both sensible and latent).</p>
-                <ul>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
-                        </svg>
-                        <span>Economical first cost</span>
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
-                        </svg>
-                        <span>Low operating costs</span>
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
-                        </svg>
-                        <span>Low maintenance</span>
-                    </li>
-                </ul>
-                <details>
-                    <summary>Read More</summary>
-                    <h2 class="headings">Applications</h2>
-                    <ul>
-                        <li *ngFor="let item of energyVents">
+                        <li>
                             <svg class="icon">
                                 <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
                             </svg>
-                            <span>{{item}}</span>
+                            <span>Low operating costs</span>
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                            </svg>
+                            <span>Low maintenance</span>
                         </li>
                     </ul>
-                </details>
-            </div>
-            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6 d-flex justify-content-end section-5a">
-                <img src="../../../assets/fresh air/energyvents.jpg" style="height: 100%;width: 50%;" alt="image of energy vents">
+                    <details>
+                        <summary>Read More</summary>
+                        <h2 class="headings">Applications</h2>
+                        <ul>
+                            <li *ngFor="let item of energyVents">
+                                <svg class="icon">
+                                    <use xlink:href="../../assets/icons/sprite.svg#tick"></use>
+                                </svg>
+                                <span>{{item}}</span>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="d-flex justify-content-center section-5a">
+                    <img src="../../../assets/fresh air/energyvents.jpg" style="height: 100%;width: 50%;"
+                        alt="image of energy vents">
+                </div>
             </div>
         </div>
 
+    </div>
 
+    <div class="row d-flex justify-content-center my-5">
         <h2 class="headings text-center my-3">ETHYLENE SCRUBBER – BES SERIES
             & GAS PHASE FILTRATION SYSTEMS
         </h2>
-        <div class="col-md-12 col-sm-12 section-6 px-5  my-5 d-flex align-items-center">
-            <div class="col-md-8">
+        <div class="section-6 p-5 my-5 d-flex align-items-center card" style="width:70rem">
+            <div class="">
                 <h2 class="subheadings">One Stop Shop' Optimum Solution- efficient removal of airborne molecular
                     contaminants
                 </h2>
@@ -253,16 +266,16 @@
                     </ul>
                 </details>
             </div>
-            <div class="col-md-4 d-flex justify-content-end section-6a">
-                <img src="../../../assets/fresh air/ethyscrubber.jpg" style="height: 100%;width: 90%;" alt="image of ethylene scrubber system">
+            <div class="d-flex justify-content-center section-6a">
+                <img src="../../../assets/fresh air/ethyscrubber.jpg" style="height: 100%;width: 40%;"
+                    alt="image of ethylene scrubber system">
             </div>
         </div>
+    </div>
 
-
-
-
+    <div class="row d-flex  justify-content-center">
         <h2 class="headings text-center my-3">BRYSORB CHEMICAL MEDIA</h2>
-        <div class="col-md-12 col-sm-12 section-7 px-5  my-5 d-flex align-items-center">
+        <div class="card section-7 p-5 my-5 d-flex flex-row align-items-center" style="width:70rem">
             <div class="col-md-8">
                 <h2 class="subheadings">ELIMINATE CORROSIVE, ODOROUS AND TOXIC GASES FROM INDUSTRIAL AND COMMERCIAL
                     ENVIRONMENT
@@ -303,14 +316,17 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <img src="../../../assets/fresh air/chemicalmedia.jpg" style="height: 100%;width: 100%;" alt="image of chemical media systems">
+                <img src="../../../assets/fresh air/chemicalmedia.jpg" style="height: 100%;width: 100%;"
+                    alt="image of chemical media systems">
             </div>
         </div>
+    </div>
 
 
 
+    <div class="row d-flex justify-content-center">
         <h2 class="headings text-center  my-3">DATACENTER AIR PURIFIER– DAP SERIES</h2>
-        <div class="col-md-12 col-sm-12 section-8 px-5  my-5 d-flex align-items-center">
+        <div class="card section-8 p-5 my-5 d-flex flex-row align-items-center" style="width:70rem">
             <div class="col-md-8">
                 <h2 class="subheadings">NEXT GENERATION
                     NEW CUSTOM DESIGNED
@@ -340,54 +356,64 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <img src="../../../assets/fresh air/ethyscrubber.jpg" style="height: 100%;width: 100%;" alt="image of ethylene scrubber system">
+                <img src="../../../assets/fresh air/ethyscrubber.jpg" style="height: 100%;width: 100%;"
+                    alt="image of ethylene scrubber system">
             </div>
         </div>
+    </div>
 
 
 
-        <div class="col-md-6 p-5 my-5 section-8-5 ">
-            <h2 class="subheadings">SYSTEMS FOR CRITICAL APPLICATIONS
-                REQUIRING PRECISE ENVIRONMENTAL CONTROL
-            </h2>
-            <img class="logos" src="../../../assets/fresh air/dristeem-logo.png" alt="dristeem logo">
-            <p class="paragraphs text-justify">We are representing DRISTEEM is Developing industry-leading
-                humidity-management
-                solutions
-                for the built environment to optimize processes, preserve materials, and create a healthy environment
-                for occupants.
-                To support the unique needs of our clients,
-                we are committed to developing innovative designs
-                & building world-class humidification
-            </p>
-        </div>
-
-        <div class="col-md-6 d-flex align-items-center justify-content-center my-4">
-
-            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="2000">
-                <div class="carousel-inner d-flex align-items-center">
-                    <div class="carousel-item active" *ngFor="let image of slider2 let i = index"
-                        [ngClass]="{'active': i == 0 }">
-                        <img class="d-block" [src]='image' alt="First slide" id="slider2-imgs">
+    <div class="row d-flex justify-content-center">
+        <div class="card p-5 d-flex flex-row" style="width:70rem">
+            <div class="col-md-6 section-8-5">
+                <h2 class="subheadings">SYSTEMS FOR CRITICAL APPLICATIONS
+                    REQUIRING PRECISE ENVIRONMENTAL CONTROL
+                </h2>
+                <img class="logos" src="../../../assets/fresh air/dristeem-logo.png" alt="dristeem logo">
+                <p class="paragraphs text-justify">We are representing DRISTEEM is Developing industry-leading
+                    humidity-management
+                    solutions
+                    for the built environment to optimize processes, preserve materials, and create a healthy
+                    environment
+                    for occupants.
+                    To support the unique needs of our clients,
+                    we are committed to developing innovative designs
+                    & building world-class humidification
+                </p>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <div class="carousel-inner d-flex align-items-center">
+                        <div class="carousel-item active" *ngFor="let image of slider2 let i = index"
+                            [ngClass]="{'active': i == 0 }">
+                            <img class="d-block" [src]='image' alt="First slide" id="slider2-imgs">
+                        </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
 
-        <h2 class="headings text-center  mt-5 mb-3">SPECIALIST IN THE MANUFACTURING AND COATING OF HVAC COILS</h2>
-        <div class="row section-9 p-5  my-2 d-flex align-items-center">
-            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6">
-                <span class="d-inline-flex">
+    </div>
+
+
+    <div class="row d-flex justify-content-center">
+        <h2 class="headings text-center mt-5 mb-3">SPECIALIST IN THE MANUFACTURING AND COATING OF HVAC COILS</h2>
+        <div class="section-9 p-5 my-2 d-flex flex-row align-items-center card" style="width:70rem">
+            <div class="col-md-6 col-sm-8">
+                <span class="d-flex">
                     <h2 class="subheadings">OASIS COILS & COATINGS (OCC)- A technology driven company </h2>
-                    <img class="logos" src="../../../assets/fresh air/occ-logo.jpg" alt="occ company logo">
+                    <div>
+                        <img class="logos" src="../../../assets/fresh air/occ-logo.jpg" alt="occ company logo">
+                    </div>
                 </span>
                 <p class="paragraphs">We represent Oasis Coils & Coatings (OCC) is UK based ISO 9001specialist
                     manufacturer, founded in 1979. Offering Heat pipes for dehumidiﬁcation and heat recovery</p>
@@ -424,11 +450,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6 col-xs-12 col-sm-12 col-xl-6 col-lg-6 d-flex flex-column align-items-center"
-                style="gap:5px">
-                <img src="../../../assets/fresh air/heatpipe1.jpg" style="height: 100%;width: 40%;" alt="image of heat pipe">
-                <img src="../../../assets/fresh air/heatpipe2.jpg" style="height: 100%;width: 40%;" alt="image of heat pipe">
+            <div class="col-md-6 col-sm-4 d-flex flex-column align-items-center" style="gap:5px">
+                <img src="../../../assets/fresh air/heatpipe1.jpg" class="sec9-imgs" style="height: 100%;width: 50%;"
+                    alt="image of heat pipe">
+                <img src="../../../assets/fresh air/heatpipe2.jpg" class="sec9-imgs" style="height: 100%;width: 50%;"
+                    alt="image of heat pipe">
             </div>
         </div>
     </div>
+
+
+
 </div>

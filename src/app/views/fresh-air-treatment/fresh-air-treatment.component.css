@@ -341,3 +341,16 @@ summary {
 }
 
 }
+
+@media(max-width:768px){
+    .section-1 .card, .section-6 .card{
+        width: 100% !important}
+
+/* .section-9{
+    flex-direction: column !important;
+} */
+
+.sec9-imgs{
+    width: 100% !important;
+}
+    }

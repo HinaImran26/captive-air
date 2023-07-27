@@ -50,13 +50,13 @@ li {
 }
 
 .icon {
-    height: 28px;
-    width: 28px;
+    height: 20px;
+    width: 20px;
     margin: 0 10px 0 0;
     border-radius: 50%;
     background: var(--blue-color);
     fill: #fff;
-    padding: 0px 6px 3px;
+    padding: 0px 4px 1px;
 }
 
 .card-title {
@@ -86,11 +86,11 @@ li {
 
 
 @media(max-width:500px) {
-   
-    .mainimg{
+
+    .mainimg {
         height: 202px;
     }
-    
+
     .mainheading {
         font-size: 30px;
         width: 100%;
@@ -125,16 +125,16 @@ li {
         margin-top: 15px;
     }
 
-    .section-0 img{
+    .section-0 img {
         width: 100% !important;
     }
 
-    .section-1 p{
+    .section-1 p {
         padding: 10px;
     }
 
-    .card-title{
-        height: unset ;
+    .card-title {
+        height: unset;
     }
 
 }

@@ -49,13 +49,13 @@ li {
 }
 
 .icon {
-    height: 28px;
-    width: 28px;
+    height: 20px;
+    width: 20px;
     margin: 0 10px 0 0;
     border-radius: 50%;
     background: var(--blue-color);
     fill: #fff;
-    padding: 0px 6px 3px;
+    padding: 0px 4px 1px;
 }
 
 .card{

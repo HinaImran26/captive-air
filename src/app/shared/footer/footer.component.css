@@ -2,7 +2,7 @@
     height: fit-content;
     background: var(--blue-color);
     color: white;
-    padding: 20px 50px 0;
+    padding: 20px 10px 0;
     position: relative;
 }
 
@@ -81,4 +81,8 @@ i {
     *{
         font-size: 14px;
     }
+}
+
+.quick-links{
+    color: white;
 }
