@@ -223,8 +223,21 @@ summary {
 @media (max-width:500px) {
     .container-fluid * {
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
+    .bry-row .card {
+        flex-direction: column !important;
+    }
+
+    .streem-row .card {
+        flex-direction: column !important;
+    }
+
+    .ethy{
+        padding: 15px !important;
+    }
+    
     .mainimg {
         height: 202px;
     }
@@ -359,7 +372,9 @@ summary {
 }
 
 @media(max-width:1024px) {
-    .row1, .row2 {
+
+    .row1,
+    .row2 {
         flex-direction: column !important;
         padding: 0px !important;
         align-items: center;
