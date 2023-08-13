@@ -12,14 +12,14 @@ export class HvacComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private meta: Meta, private title: Title) { }
 
   RhossArray = [
-    '../../../assets/images/Rhoss/Rhoss1.png',
-    '../../../assets/images/Rhoss/Rhoss2.png',
-    '../../../assets/images/Rhoss/Rhoss3.png',
-    '../../../assets/images/Rhoss/Rhoss4.png',
-    '../../../assets/images/Rhoss/Rhoss5.png',
-    '../../../assets/images/Rhoss/Rhoss6.png',
-    '../../../assets/images/Rhoss/Rhoss7.png',
-    '../../../assets/images/Rhoss/Rhoss8.png',
+    '../../../assets/images/Rhoss/Rhoss1.jpeg',
+    '../../../assets/images/Rhoss/Rhoss2.jpeg',
+    '../../../assets/images/Rhoss/Rhoss3.jpeg',
+    '../../../assets/images/Rhoss/Rhoss4.jpeg'
+    // '../../../assets/images/Rhoss/Rhoss5.png',
+    // '../../../assets/images/Rhoss/Rhoss6.png',
+    // '../../../assets/images/Rhoss/Rhoss7.png',
+    // '../../../assets/images/Rhoss/Rhoss8.png',
   ]
 
   BushArray = [
