@@ -122,8 +122,16 @@ img {
 }
 
 .headings {
+    color: white;
+    /* background: var(--blue-color); */
+    padding: 10px;
+    background: var(--red-color);
+    font-size:28px;
+}
+
+.subsubheading{
     color: var(--blue-color);
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .hr-underline {
@@ -205,8 +213,11 @@ summary {
 }
 
 .subheadings {
-    color: var(--blue-color);
+    color: white;
+    background-color: var(--blue-color);
     font-size: 22px;
+    padding: 10px;
+    text-align: center;
 }
 
 .section-1-2 {
