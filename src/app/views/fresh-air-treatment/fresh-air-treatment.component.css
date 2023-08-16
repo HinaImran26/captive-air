@@ -241,6 +241,8 @@ summary {
         flex-direction: column !important;
     }
 
+  
+
     .streem-row .card {
         flex-direction: column !important;
     }
@@ -398,4 +400,10 @@ summary {
     }
 
 
+}
+
+@media(max-width:425px){
+    .section-2 .card , .section-3 .card, .freshairrow, .bry-row .card, .datacenterrow, .streem-row .card , .lastrow{
+        padding:10px !important;
+    }
 }
