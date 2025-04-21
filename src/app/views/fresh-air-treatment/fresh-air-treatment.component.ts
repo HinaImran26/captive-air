@@ -66,7 +66,7 @@ export class FreshAirTreatmentComponent implements OnInit {
     'Incorporates high performance fluted metal silicate desiccant synthesized rotor',
     'Stainless steel construction (optional)',
     'Place it anywhere – indoor/outdoor including mounting',
-    'Largest capacity range in Compact Dehumidifiers – 170 CMH to 3000 CMH'
+    // 'Largest capacity range in Compact Dehumidifiers – 170 CMH to 3000 CMH'
   ]
 
   industrialApps = [
